@@ -38,10 +38,10 @@ class DepotController extends AbstractController
             $form->submit($values);
 
             $depot->setDatedepot(new \DateTime);
-            $util=$user->find($values['user']);
+            $util=$user->findOneBy(["username" =>$values["username"]]);
             $depot->setUser($util);
 
-            $cpte=$compte->find($values['compte']);
+            $cpte=$compte->findOneBy(["numerocompte" =>$values["numerocompte"]]);
             $cpte->setSolde($cpte->getSolde() + $values['montant']);
             $depot->setCompte($cpte);
 
