@@ -38,7 +38,7 @@ class CompteController extends AbstractController
 
         $compte->setNumerocompte(random_int(539004, 9805843));
         $compte->setSolde(0);
-        $part=$partenaire->find($values['partenaire']);
+        $part=$partenaire->findOneBy(["ninea" =>$values["ninea"]]);
         $compte->setPartenaire($part);
 
         $errors = $validator->validate($compte);

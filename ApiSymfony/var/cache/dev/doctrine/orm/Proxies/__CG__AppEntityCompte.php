@@ -64,10 +64,10 @@ class Compte extends \App\Entity\Compte implements \Doctrine\ORM\Proxy\Proxy
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', '' . "\0" . 'App\\Entity\\Compte' . "\0" . 'id', '' . "\0" . 'App\\Entity\\Compte' . "\0" . 'numerocompte', '' . "\0" . 'App\\Entity\\Compte' . "\0" . 'solde', '' . "\0" . 'App\\Entity\\Compte' . "\0" . 'depot', '' . "\0" . 'App\\Entity\\Compte' . "\0" . 'transaction', '' . "\0" . 'App\\Entity\\Compte' . "\0" . 'partenaire'];
+            return ['__isInitialized__', '' . "\0" . 'App\\Entity\\Compte' . "\0" . 'id', '' . "\0" . 'App\\Entity\\Compte' . "\0" . 'numerocompte', '' . "\0" . 'App\\Entity\\Compte' . "\0" . 'solde', '' . "\0" . 'App\\Entity\\Compte' . "\0" . 'depot', '' . "\0" . 'App\\Entity\\Compte' . "\0" . 'transaction', '' . "\0" . 'App\\Entity\\Compte' . "\0" . 'partenaire', '' . "\0" . 'App\\Entity\\Compte' . "\0" . 'users'];
         }
 
-        return ['__isInitialized__', '' . "\0" . 'App\\Entity\\Compte' . "\0" . 'id', '' . "\0" . 'App\\Entity\\Compte' . "\0" . 'numerocompte', '' . "\0" . 'App\\Entity\\Compte' . "\0" . 'solde', '' . "\0" . 'App\\Entity\\Compte' . "\0" . 'depot', '' . "\0" . 'App\\Entity\\Compte' . "\0" . 'transaction', '' . "\0" . 'App\\Entity\\Compte' . "\0" . 'partenaire'];
+        return ['__isInitialized__', '' . "\0" . 'App\\Entity\\Compte' . "\0" . 'id', '' . "\0" . 'App\\Entity\\Compte' . "\0" . 'numerocompte', '' . "\0" . 'App\\Entity\\Compte' . "\0" . 'solde', '' . "\0" . 'App\\Entity\\Compte' . "\0" . 'depot', '' . "\0" . 'App\\Entity\\Compte' . "\0" . 'transaction', '' . "\0" . 'App\\Entity\\Compte' . "\0" . 'partenaire', '' . "\0" . 'App\\Entity\\Compte' . "\0" . 'users'];
     }
 
     /**
@@ -318,6 +318,39 @@ class Compte extends \App\Entity\Compte implements \Doctrine\ORM\Proxy\Proxy
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'setPartenaire', [$partenaire]);
 
         return parent::setPartenaire($partenaire);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getUsers(): \Doctrine\Common\Collections\Collection
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getUsers', []);
+
+        return parent::getUsers();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function addUser(\App\Entity\User $user): \App\Entity\Compte
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'addUser', [$user]);
+
+        return parent::addUser($user);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function removeUser(\App\Entity\User $user): \App\Entity\Compte
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'removeUser', [$user]);
+
+        return parent::removeUser($user);
     }
 
 }

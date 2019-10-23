@@ -4,7 +4,7 @@ namespace App\Controller;
 
 use App\Entity\User;
 use App\Form\UserType;
-
+use App\Repository\CompteRepository;
 use App\Repository\UserRepository;
 use App\Repository\PartenaireRepository;
 use Doctrine\ORM\EntityManagerInterface;
@@ -34,7 +34,7 @@ class UserController extends AbstractController
      * @Route("/user", name="add_user", methods={"POST", "GET"})
     */
 
-    public function addUser(Request $request, UserPasswordEncoderInterface $passwordEncoder,PartenaireRepository $partenaire ,EntityManagerInterface $entityManager,SerializerInterface $serializer,ValidatorInterface $validator)
+    public function addUser(Request $request, UserPasswordEncoderInterface $passwordEncoder,PartenaireRepository $partenaire,CompteRepository $compte ,EntityManagerInterface $entityManager,SerializerInterface $serializer,ValidatorInterface $validator)
     {
         $user = new User();
 
@@ -53,14 +53,14 @@ class UserController extends AbstractController
 
             $user->setImageFile($files);
             $user->setUpdatedAt(new \DateTime());
-            $part=$partenaire->find($values['partenaire']);
+            $part=$partenaire->findOneBy(["ninea" =>$values["ninea"]]);
             $user->setPartenaire($part);
+            $cpte=$compte->findOneBy(["numerocompte" =>$values["numerocompte"]]);
+            $user->setCompte($cpte);
             $user->setStatus("actif");
             $user->setProfile($values['profile']);
             if ($values['profile']=="admin") {
                 $user->setRoles(["ROLE_ADMIN_PARTENAIRE"]);
-            }elseif ($values['profile']=="caissier") {
-                $user->setRoles(["ROLE_CAISSIER"]);
             }elseif ($values['profile']=="user") {
                 $user->setRoles(["ROLE_USER"]);
             }
@@ -78,6 +78,54 @@ class UserController extends AbstractController
             $data = [
                 'status1' => 201,
                 'message1' => 'L\'utilisateur a été créé'
+            ];
+
+            return new JsonResponse($data, 201);
+    }
+
+    /**
+     * @Route("/caissier", name="add_caissier", methods={"POST", "GET"})
+    */
+
+    public function addUCaissier(Request $request, UserPasswordEncoderInterface $passwordEncoder,PartenaireRepository $partenaire,CompteRepository $compte ,EntityManagerInterface $entityManager,SerializerInterface $serializer,ValidatorInterface $validator)
+    {
+        $user = new User();
+
+            $form=$this->createForm(UserType::class,$user);
+            $form->handleRequest($request);
+            $values=$request->request->all();
+            $form->submit($values);
+
+            $files=$request->files->all()['imageName'];
+            $user->setPassword(
+                $passwordEncoder->encodePassword(
+                    $user,
+                    $form->get('plainPassword')->getData()
+                )
+            );
+
+            $user->setImageFile($files);
+            $user->setUpdatedAt(new \DateTime());
+            $part=$partenaire->findOneBy(["ninea" =>$values["ninea"]]);
+            $user->setPartenaire($part);
+            $cpte=$compte->findOneBy(["numerocompte" =>$values["numerocompte"]]);
+            $user->setCompte($cpte);
+            $user->setStatus("actif");
+            $user->setProfile("ROLE_CAISSIER");
+
+            $errors = $validator->validate($user);
+            if(count($errors)) {
+                $errors = $serializer->serialize($errors, 'json');
+                return new Response($errors, 500, [
+                    'Content-Type' => 'application/json'
+                ]);
+            }
+
+            $entityManager->persist($user);
+            $entityManager->flush();
+            $data = [
+                'status1' => 201,
+                'message1' => 'Un caissier a été créé'
             ];
 
             return new JsonResponse($data, 201);
@@ -153,4 +201,17 @@ class UserController extends AbstractController
     $this->passwordEncoder = $passwordEncoder;
     }
 
+    /**
+     * @Route("/liste_users" , name="liste_users" ,methods={"GET", "POST"})
+     */
+    public function listerUser(UserRepository $userRepository, SerializerInterface $serializer)
+    {
+
+        $user = $userRepository->findAll();
+        $data = $serializer->serialize($user, 'json', [
+            'group' => ['show'],
+        ]);
+        return new Response($data, 201);
+
+    }
 }

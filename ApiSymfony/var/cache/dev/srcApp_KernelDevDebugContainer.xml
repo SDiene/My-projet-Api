@@ -86,7 +86,7 @@
         <parameter key="namespace">FOS\RestBundle</parameter>
       </parameter>
       <parameter key="SensioFrameworkExtraBundle" type="collection">
-        <parameter key="path">/home/diene/Téléchargements/Telegram Desktop/ApiSymfony/vendor/sensio/framework-extra-bundle</parameter>
+        <parameter key="path">/home/diene/Téléchargements/Telegram Desktop/ApiSymfony/vendor/sensio/framework-extra-bundle/src</parameter>
         <parameter key="namespace">Sensio\Bundle\FrameworkExtraBundle</parameter>
       </parameter>
       <parameter key="VichUploaderBundle" type="collection">
@@ -623,6 +623,13 @@
       <tag name="container.service_subscriber"/>
       <call method="setContainer">
         <argument type="service" id=".service_locator.CDOTD6..App\Controller\PartenaireController"/>
+      </call>
+    </service>
+    <service id="App\Controller\TransactionController" class="App\Controller\TransactionController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.CDOTD6..App\Controller\TransactionController"/>
       </call>
     </service>
     <service id="App\Controller\UserController" class="App\Controller\UserController" public="true" autowire="true" autoconfigure="true">
@@ -1922,7 +1929,7 @@
           <argument>/home/diene/Téléchargements/Telegram Desktop/ApiSymfony/src/Resources/DoctrineFixturesBundle/translations</argument>
           <argument>/home/diene/Téléchargements/Telegram Desktop/ApiSymfony/vendor/friendsofsymfony/rest-bundle/Resources/translations</argument>
           <argument>/home/diene/Téléchargements/Telegram Desktop/ApiSymfony/src/Resources/FOSRestBundle/translations</argument>
-          <argument>/home/diene/Téléchargements/Telegram Desktop/ApiSymfony/vendor/sensio/framework-extra-bundle/Resources/translations</argument>
+          <argument>/home/diene/Téléchargements/Telegram Desktop/ApiSymfony/vendor/sensio/framework-extra-bundle/src/Resources/translations</argument>
           <argument>/home/diene/Téléchargements/Telegram Desktop/ApiSymfony/src/Resources/SensioFrameworkExtraBundle/translations</argument>
           <argument>/home/diene/Téléchargements/Telegram Desktop/ApiSymfony/src/Resources/VichUploaderBundle/translations</argument>
           <argument>/home/diene/Téléchargements/Telegram Desktop/ApiSymfony/src/Resources/EasyAdminBundle/translations</argument>
@@ -2723,14 +2730,6 @@
       </call>
       <call method="addListener">
         <argument>kernel.request</argument>
-        <argument type="collection">
-          <argument type="service" id="debug.debug_handlers_listener"/>
-          <argument>configure</argument>
-        </argument>
-        <argument>2048</argument>
-      </call>
-      <call method="addListener">
-        <argument>console.command</argument>
         <argument type="collection">
           <argument type="service" id="debug.debug_handlers_listener"/>
           <argument>configure</argument>
@@ -6822,6 +6821,9 @@
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\PartenaireController" class="App\Controller\PartenaireController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\PartenaireController" class="App\Controller\PartenaireController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\PartenaireController" class="App\Controller\PartenaireController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\TransactionController" class="App\Controller\TransactionController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\TransactionController" class="App\Controller\TransactionController" autowire="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\TransactionController" class="App\Controller\TransactionController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\UserController" class="App\Controller\UserController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\UserController" class="App\Controller\UserController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\UserController" class="App\Controller\UserController" autowire="true" autoconfigure="true" abstract="true"/>
@@ -7093,9 +7095,32 @@
         <argument key="serializer" type="service" id="serializer"/>
       </argument>
     </service>
-    <service id=".service_locator.TUlHZkW" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id=".service_locator.8XqoKpL" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
+        <argument key="compte" type="service" id="App\Repository\CompteRepository"/>
+        <argument key="entityManager" type="service" id="doctrine.orm.default_entity_manager"/>
+        <argument key="user" type="service" id="App\Repository\UserRepository"/>
+      </argument>
+    </service>
+    <service id=".service_locator.ojhUcTA" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="entityManager" type="service" id="doctrine.orm.default_entity_manager"/>
+        <argument key="transaction" type="service" id="App\Repository\TransactionRepository"/>
+      </argument>
+    </service>
+    <service id=".service_locator.wckgq2u" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="serializer" type="service" id="serializer"/>
+        <argument key="trans" type="service" id="App\Repository\TransactionRepository"/>
+      </argument>
+    </service>
+    <service id=".service_locator.UCnY3z_" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="compte" type="service" id="App\Repository\CompteRepository"/>
         <argument key="entityManager" type="service" id="doctrine.orm.default_entity_manager"/>
         <argument key="partenaire" type="service" id="App\Repository\PartenaireRepository"/>
         <argument key="passwordEncoder" type="service" id="security.user_password_encoder.generic"/>
@@ -7117,7 +7142,14 @@
         <argument key="JWTEncoder" type="service" id="lexik_jwt_authentication.encoder.lcobucci"/>
       </argument>
     </service>
-    <service id=".service_locator.DfbjZJQ" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id=".service_locator.OIueEnh" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="serializer" type="service" id="serializer"/>
+        <argument key="userRepository" type="service" id="App\Repository\UserRepository"/>
+      </argument>
+    </service>
+    <service id=".service_locator.dFRxx5z" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Controller\CompteController::addcompte" type="service" id=".service_locator.K1GV3El"/>
@@ -7127,8 +7159,13 @@
         <argument key="App\Controller\PartenaireController::addPartenaire" type="service" id=".service_locator.5U4mfWm"/>
         <argument key="App\Controller\PartenaireController::index" type="service" id=".service_locator.mhlV_Pp"/>
         <argument key="App\Controller\PartenaireController::list" type="service" id=".service_locator.omA4m1h"/>
-        <argument key="App\Controller\UserController::addUser" type="service" id=".service_locator.TUlHZkW"/>
+        <argument key="App\Controller\TransactionController::addTransaction" type="service" id=".service_locator.8XqoKpL"/>
+        <argument key="App\Controller\TransactionController::index" type="service" id=".service_locator.wckgq2u"/>
+        <argument key="App\Controller\TransactionController::retrait" type="service" id=".service_locator.ojhUcTA"/>
+        <argument key="App\Controller\UserController::addUCaissier" type="service" id=".service_locator.UCnY3z_"/>
+        <argument key="App\Controller\UserController::addUser" type="service" id=".service_locator.UCnY3z_"/>
         <argument key="App\Controller\UserController::list" type="service" id=".service_locator.yC11jyM"/>
+        <argument key="App\Controller\UserController::listerUser" type="service" id=".service_locator.OIueEnh"/>
         <argument key="App\Controller\UserController::token" type="service" id=".service_locator.0xDS.HG"/>
         <argument key="App\Controller\CompteController:addcompte" type="service" id=".service_locator.K1GV3El"/>
         <argument key="App\Controller\CompteController:listcompte" type="service" id=".service_locator.O0uin.n"/>
@@ -7137,8 +7174,13 @@
         <argument key="App\Controller\PartenaireController:addPartenaire" type="service" id=".service_locator.5U4mfWm"/>
         <argument key="App\Controller\PartenaireController:index" type="service" id=".service_locator.mhlV_Pp"/>
         <argument key="App\Controller\PartenaireController:list" type="service" id=".service_locator.omA4m1h"/>
-        <argument key="App\Controller\UserController:addUser" type="service" id=".service_locator.TUlHZkW"/>
+        <argument key="App\Controller\TransactionController:addTransaction" type="service" id=".service_locator.8XqoKpL"/>
+        <argument key="App\Controller\TransactionController:index" type="service" id=".service_locator.wckgq2u"/>
+        <argument key="App\Controller\TransactionController:retrait" type="service" id=".service_locator.ojhUcTA"/>
+        <argument key="App\Controller\UserController:addUCaissier" type="service" id=".service_locator.UCnY3z_"/>
+        <argument key="App\Controller\UserController:addUser" type="service" id=".service_locator.UCnY3z_"/>
         <argument key="App\Controller\UserController:list" type="service" id=".service_locator.yC11jyM"/>
+        <argument key="App\Controller\UserController:listerUser" type="service" id=".service_locator.OIueEnh"/>
         <argument key="App\Controller\UserController:token" type="service" id=".service_locator.0xDS.HG"/>
       </argument>
     </service>
@@ -7349,6 +7391,12 @@
       <argument type="service" id="service_container"/>
       <factory service=".service_locator.CDOTD6." method="withContext"/>
     </service>
+    <service id=".service_locator.CDOTD6..App\Controller\TransactionController" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator_context" id="App\Controller\TransactionController"/>
+      <argument>App\Controller\TransactionController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.CDOTD6." method="withContext"/>
+    </service>
     <service id=".service_locator.CDOTD6..App\Controller\UserController" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator_context" id="App\Controller\UserController"/>
       <argument>App\Controller\UserController</argument>
@@ -7505,12 +7553,12 @@
       <argument type="service" id="security.token_storage"/>
     </service>
     <service id="debug.argument_resolver.service.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver" public="false">
-      <argument type="service" id=".service_locator.DfbjZJQ"/>
+      <argument type="service" id=".service_locator.dFRxx5z"/>
     </service>
     <service id="debug.argument_resolver.default.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver" public="false"/>
     <service id="debug.argument_resolver.variadic.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\VariadicValueResolver" public="false"/>
     <service id="debug.argument_resolver.not_tagged_controller.inner" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver" public="false">
-      <argument type="service" id=".service_locator.DfbjZJQ"/>
+      <argument type="service" id=".service_locator.dFRxx5z"/>
     </service>
     <service id="api_platform.swagger.normalizer.api_gateway.inner" class="ApiPlatform\Core\Swagger\Serializer\DocumentationNormalizer" public="false">
       <argument type="service" id="api_platform.metadata.resource.metadata_factory.cached"/>
@@ -8031,7 +8079,7 @@
     <service id="EasyCorp\Bundle\EasyAdminBundle\Security\AuthorizationChecker" alias="easyadmin.security.authorization_checker"/>
     <service id="EasyCorp\Bundle\EasyAdminBundle\Form\Filter\FilterRegistry" alias="easyadmin.filter.registry" public="true"/>
     <service id="nelmio_api_doc.generator" alias="nelmio_api_doc.generator.default" public="true"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.DfbjZJQ"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.dFRxx5z"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem" public="false"/>
     <service id="twig.loader" alias="twig.loader.native_filesystem"/>
     <service id="api_platform.name_converter" alias="serializer.name_converter.metadata_aware"/>

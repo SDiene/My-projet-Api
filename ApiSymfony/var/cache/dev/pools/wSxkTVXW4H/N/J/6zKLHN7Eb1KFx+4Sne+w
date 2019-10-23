@@ -14,7 +14,7 @@ return $getExpiry ? PHP_INT_MAX : Hydrator::hydrate(
                 '/envoie',
             ],
             'name' => [
-                'add_transaction',
+                'add_envoie',
             ],
             'methods' => [
                 [

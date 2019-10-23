@@ -17,7 +17,7 @@ class Transaction
      * @ORM\Id()
      * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
-     * @Groups({"list"})
+     * @Groups({"show"})
      */
     private $id;
 
@@ -35,93 +35,103 @@ class Transaction
 
     /**
      * @ORM\Column(type="integer")
-     * @Groups({"list"})
+     * @Groups({"show"})
      */
     private $code;
 
     /**
      * @ORM\Column(type="integer")
-     * @Groups({"list"})
+     * @Groups({"show"})
      */
     private $montant;
 
     /**
      * @ORM\Column(type="integer")
-     * @Groups({"list"})
+     * @Groups({"show"})
      */
     private $cometat;
 
     /**
      * @ORM\Column(type="integer")
-     * @Groups({"list"})
+     * @Groups({"show"})
      */
     private $comsystem;
 
     /**
      * @ORM\Column(type="integer")
-     * @Groups({"list"})
+     * @Groups({"show"})
      */
     private $comenvoie;
 
     /**
      * @ORM\Column(type="string", length=255)
-     * @Groups({"list"})
+     * @Groups({"show"})
      */
     private $type;
 
     /**
      * @ORM\Column(type="integer")
-     * @Groups({"list"})
+     * @Groups({"show"})
      */
     private $frais;
 
     /**
      * @ORM\Column(type="integer")
+     * @Groups({"show"})
      */
     private $comretrait;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups({"show"})
      */
     private $nomE;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups({"show"})
      */
     private $prenomE;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups({"show"})
      */
     private $telE;
 
     /**
      * @ORM\Column(type="datetime")
+     * @Groups({"show"})
      */
     private $dateEnvoie;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups({"show"})
      */
     private $nomEx;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups({"show"})
      */
     private $prenomEx;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups({"show"})
      */
     private $adresseEx;
 
     /**
      * @ORM\Column(type="integer")
+     * @Groups({"show"})
      */
     private $telephoneEx;
 
     /**
      * @ORM\Column(type="integer")
+     * @Groups({"show"})
      */
     private $cniEx;
 
