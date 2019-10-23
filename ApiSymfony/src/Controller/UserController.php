@@ -106,12 +106,11 @@ class UserController extends AbstractController
 
             $user->setImageFile($files);
             $user->setUpdatedAt(new \DateTime());
-            $part=$partenaire->findOneBy(["ninea" =>$values["ninea"]]);
-            $user->setPartenaire($part);
-            $cpte=$compte->findOneBy(["numerocompte" =>$values["numerocompte"]]);
-            $user->setCompte($cpte);
             $user->setStatus("actif");
-            $user->setProfile("ROLE_CAISSIER");
+            $user->setProfile($values['profile']);
+            if ($values['profile']=="caissier") {
+                $user->setRoles(["ROLE_CAISSIER"]);
+            }
 
             $errors = $validator->validate($user);
             if(count($errors)) {

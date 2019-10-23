@@ -16,6 +16,6 @@ if (!\class_exists(srcApp_KernelDevDebugContainer::class, false)) {
 
 return new \ContainerTGQ3MDI\srcApp_KernelDevDebugContainer([
     'container.build_hash' => 'TGQ3MDI',
-    'container.build_id' => 'dbd487d5',
-    'container.build_time' => 1571787781,
+    'container.build_id' => '4d857994',
+    'container.build_time' => 1571799026,
 ], __DIR__.\DIRECTORY_SEPARATOR.'ContainerTGQ3MDI');
