@@ -34,10 +34,10 @@ return $getExpiry ? PHP_INT_MAX : Hydrator::hydrate(
                 1 => 'object',
             ],
             'nullable' => [
-                1 => false,
+                1 => true,
             ],
             'class' => [
-                1 => 'Doctrine\\Common\\Collections\\Collection',
+                1 => 'DateTime',
             ],
             'collection' => [
                 1 => false,

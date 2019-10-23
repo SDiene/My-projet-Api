@@ -23,6 +23,7 @@ return [
     'add_partenaire' => [[], ['_controller' => 'App\\Controller\\PartenaireController::addPartenaire'], [], [['text', '/api/partenaire']], [], []],
     'show_partenaire' => [['id'], ['_controller' => 'App\\Controller\\PartenaireController::list'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/api/partenaires']], [], []],
     'apiadd_envoie' => [[], ['_controller' => 'App\\Controller\\TransactionController::addTransaction'], [], [['text', '/api/envoie']], [], []],
+    'apiadd_retrait' => [[], ['_controller' => 'App\\Controller\\TransactionController::retrait'], [], [['text', '/api/retrait']], [], []],
     'apilist_transaction' => [[], ['_controller' => 'App\\Controller\\TransactionController::index'], [], [['text', '/api/liste_transaction']], [], []],
     'apiadd_user' => [[], ['_controller' => 'App\\Controller\\UserController::addUser'], [], [['text', '/api/user']], [], []],
     'apiadd_caissier' => [[], ['_controller' => 'App\\Controller\\UserController::addUCaissier'], [], [['text', '/api/caissier']], [], []],

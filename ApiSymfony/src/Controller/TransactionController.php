@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\Transaction;
+use App\Entity\Tarifs;
 use App\Form\TransactionType;
 
 use App\Repository\UserRepository;
@@ -99,9 +100,9 @@ class TransactionController extends AbstractController
                   
     }
 
-    /*
+    /**
      * @Route("/retrait", name="add_retrait" ,methods={"POST", "GET"})
-     */
+    */
 
     public function retrait(Request $request, EntityManagerInterface $entityManager, TransactionRepository $transaction)
     {

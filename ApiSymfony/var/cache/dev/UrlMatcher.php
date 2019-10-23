@@ -18,6 +18,7 @@ return [
         '/api/pdf' => [[['_route' => 'part', '_controller' => 'App\\Controller\\PartenaireController::index'], null, ['GET' => 0, 'POST' => 1], null, false, false, null]],
         '/api/partenaire' => [[['_route' => 'add_partenaire', '_controller' => 'App\\Controller\\PartenaireController::addPartenaire'], null, ['POST' => 0, 'GET' => 1], null, false, false, null]],
         '/api/envoie' => [[['_route' => 'apiadd_envoie', '_controller' => 'App\\Controller\\TransactionController::addTransaction'], null, ['POST' => 0, 'GET' => 1], null, false, false, null]],
+        '/api/retrait' => [[['_route' => 'apiadd_retrait', '_controller' => 'App\\Controller\\TransactionController::retrait'], null, ['POST' => 0, 'GET' => 1], null, false, false, null]],
         '/api/liste_transaction' => [[['_route' => 'apilist_transaction', '_controller' => 'App\\Controller\\TransactionController::index'], null, ['GET' => 0, 'POST' => 1], null, false, false, null]],
         '/api/user' => [[['_route' => 'apiadd_user', '_controller' => 'App\\Controller\\UserController::addUser'], null, ['POST' => 0, 'GET' => 1], null, false, false, null]],
         '/api/caissier' => [[['_route' => 'apiadd_caissier', '_controller' => 'App\\Controller\\UserController::addUCaissier'], null, ['POST' => 0, 'GET' => 1], null, false, false, null]],

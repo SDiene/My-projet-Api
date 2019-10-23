@@ -18,6 +18,13 @@ class TransactionType extends AbstractType
             ->add('cometat')
             ->add('comsystem')
             ->add('comenvoie')
+            ->add('nomE')
+            ->add('prenomE')
+            ->add('telE')   
+            ->add('nomEx')   
+            ->add('prenomEx')   
+            ->add('telephoneEx')   
+            ->add('adresseEx')   
         ;
     }
 

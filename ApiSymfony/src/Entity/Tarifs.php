@@ -3,8 +3,6 @@
 namespace App\Entity;
 
 use ApiPlatform\Core\Annotation\ApiResource;
-use Doctrine\Common\Collections\ArrayCollection;
-use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -34,11 +32,6 @@ class Tarifs
      * @ORM\Column(type="integer")
      */
     private $valeur;
-
-    public function __construct()
-    {
-        $this->transaction = new ArrayCollection();
-    }
 
     public function getId(): ?int
     {
@@ -81,34 +74,4 @@ class Tarifs
         return $this;
     }
 
-    /**
-     * @return Collection|Transaction[]
-     */
-    public function getTransaction(): Collection
-    {
-        return $this->transaction;
-    }
-
-    public function addTransaction(Transaction $transaction): self
-    {
-        if (!$this->transaction->contains($transaction)) {
-            $this->transaction[] = $transaction;
-            $transaction->setTarifs($this);
-        }
-
-        return $this;
-    }
-
-    public function removeTransaction(Transaction $transaction): self
-    {
-        if ($this->transaction->contains($transaction)) {
-            $this->transaction->removeElement($transaction);
-            // set the owning side to null (unless already changed)
-            if ($transaction->getTarifs() === $this) {
-                $transaction->setTarifs(null);
-            }
-        }
-
-        return $this;
-    }
 }

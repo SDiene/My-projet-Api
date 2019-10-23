@@ -34,7 +34,7 @@ class Transaction
     private $compte;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="integer", nullable=true)
      * @Groups({"show"})
      */
     private $code;
@@ -130,10 +130,15 @@ class Transaction
     private $telephoneEx;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="integer", nullable=true)
      * @Groups({"show"})
      */
     private $cniEx;
+
+    /**
+     * @ORM\Column(type="datetime", nullable=true)
+     */
+    private $dateRetrait;
 
     public function getId(): ?int
     {
@@ -376,6 +381,18 @@ class Transaction
     public function setCniEx(int $cniEx): self
     {
         $this->cniEx = $cniEx;
+
+        return $this;
+    }
+
+    public function getDateRetrait(): ?\DateTimeInterface
+    {
+        return $this->dateRetrait;
+    }
+
+    public function setDateRetrait(?\DateTimeInterface $dateRetrait): self
+    {
+        $this->dateRetrait = $dateRetrait;
 
         return $this;
     }

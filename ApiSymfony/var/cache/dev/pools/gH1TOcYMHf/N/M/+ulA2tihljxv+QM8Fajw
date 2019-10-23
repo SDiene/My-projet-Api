@@ -15,7 +15,6 @@ return $getExpiry ? PHP_INT_MAX : Hydrator::hydrate(
                     'borneInferieur',
                     'borneSuperieur',
                     'valeur',
-                    'transaction',
                 ],
             ],
         ],
