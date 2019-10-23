@@ -119,21 +119,14 @@ class User implements UserInterface
     private $depot;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\Compte", mappedBy="user")
-     */
-    private $user;
-
-    /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Compte", inversedBy="users")
      */
     private $compte;
 
     public function __construct()
     {
-        $this->compte = new ArrayCollection();
         $this->transaction = new ArrayCollection();
         $this->depot = new ArrayCollection();
-        $this->user = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -378,7 +371,6 @@ class User implements UserInterface
         return $this->updatedAt;
     }
 
-
     /**
      * Set the value of updatedAt
      * @param  \DateTime
@@ -387,37 +379,6 @@ class User implements UserInterface
     public function setUpdatedAt(\DateTime $updatedAt)
     {
         $this->updatedAt = $updatedAt;
-
-        return $this;
-    }
-
-    /**
-     * @return Collection|Compte[]
-     */
-    public function getUser(): Collection
-    {
-        return $this->user;
-    }
-
-    public function addUser(Compte $user): self
-    {
-        if (!$this->user->contains($user)) {
-            $this->user[] = $user;
-            $user->setUser($this);
-        }
-
-        return $this;
-    }
-
-    public function removeUser(Compte $user): self
-    {
-        if ($this->user->contains($user)) {
-            $this->user->removeElement($user);
-            // set the owning side to null (unless already changed)
-            if ($user->getUser() === $this) {
-                $user->setUser(null);
-            }
-        }
 
         return $this;
     }
@@ -433,5 +394,6 @@ class User implements UserInterface
 
         return $this;
     }
+
 
 }

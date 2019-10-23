@@ -107,10 +107,8 @@ class UserController extends AbstractController
             $user->setImageFile($files);
             $user->setUpdatedAt(new \DateTime());
             $user->setStatus("actif");
-            $user->setProfile($values['profile']);
-            if ($values['profile']=="caissier") {
-                $user->setRoles(["ROLE_CAISSIER"]);
-            }
+            $user->setProfile("caissier");
+            $user->setRoles(["ROLE_CAISSIER"]);
 
             $errors = $validator->validate($user);
             if(count($errors)) {

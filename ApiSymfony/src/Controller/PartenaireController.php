@@ -81,6 +81,18 @@ class PartenaireController extends AbstractController
         $values=$request->request->all();
         $form->submit($values);
 
+        $compte = new Compte();
+
+        $form=$this->createForm(CompteType::class,$compte);
+        $form->handleRequest($request);
+        $values=$request->request->all();
+        $form->submit($values);
+
+        $compte->setNumerocompte(random_int(539004, 9805843));
+        $compte->setSolde(0);
+        
+        $compte->setPartenaire($partenaire);
+        
         $user = new User();
 
         $form=$this->createForm(UserType::class,$user);
@@ -97,22 +109,12 @@ class PartenaireController extends AbstractController
         $user->setImageFile($files);
         $user->setUpdatedAt(new \DateTime());
         $user->setPartenaire($partenaire);
+        $user->setCompte($compte);
         $user->setStatus("actif");
         $user->setProfile("admin");
         $user->setRoles(["ROLE_ADMIN_PARTENAIRE"]);
 
-        $compte = new Compte();
-
-        $form=$this->createForm(CompteType::class,$compte);
-        $form->handleRequest($request);
-        $values=$request->request->all();
-        $form->submit($values);
-
-        $compte->setNumerocompte(random_int(539004, 9805843));
-        $compte->setSolde(0);
-        /* $part=$this->getDoctrine()->getRepository(Partenaire::class)->find($values->partenaire);
-        $compte->setPartenaire($part); */
-        $compte->setPartenaire($partenaire);
+        
         $errors = $validator->validate($partenaire);
         if(count($errors)) {
             $errors = $serializer->serialize($errors, 'json');
