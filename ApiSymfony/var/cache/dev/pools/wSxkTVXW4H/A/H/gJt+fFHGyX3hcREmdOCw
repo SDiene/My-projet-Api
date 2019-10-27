@@ -13,7 +13,7 @@ return $getExpiry ? PHP_INT_MAX : Hydrator::hydrate(
                 '/liste_transaction',
             ],
             'name' => [
-                'list_transaction',
+                'liste_transaction',
             ],
             'methods' => [
                 [

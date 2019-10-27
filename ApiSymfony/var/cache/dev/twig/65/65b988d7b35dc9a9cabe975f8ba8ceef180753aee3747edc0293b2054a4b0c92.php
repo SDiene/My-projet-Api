@@ -45,23 +45,14 @@ class __TwigTemplate_0fc424f34968357bad475d96ba9c7aa54985e2f679ec6e2d4c7a7003959
             echo "    ";
             if ((twig_length_filter($this->env, (isset($context["value"]) || array_key_exists("value", $context) ? $context["value"] : (function () { throw new RuntimeError('Variable "value" does not exist.', 2, $this->source); })())) > 0)) {
                 // line 3
-                echo "        <ul>
-            ";
-                // line 4
-                $context['_parent'] = $context;
-                $context['_seq'] = twig_ensure_traversable((isset($context["value"]) || array_key_exists("value", $context) ? $context["value"] : (function () { throw new RuntimeError('Variable "value" does not exist.', 4, $this->source); })()));
-                foreach ($context['_seq'] as $context["_key"] => $context["element"]) {
-                    // line 5
-                    echo "                <li>";
-                    echo twig_escape_filter($this->env, $context["element"], "html", null, true);
-                    echo "</li>
-            ";
-                }
-                $_parent = $context['_parent'];
-                unset($context['_seq'], $context['_iterated'], $context['_key'], $context['element'], $context['_parent'], $context['loop']);
-                $context = array_intersect_key($context, $_parent) + $_parent;
-                // line 7
-                echo "        </ul>
+                echo "        <div class=\"large code\">
+            <textarea readonly class=\"form-control\">
+                ";
+                // line 5
+                echo twig_escape_filter($this->env, twig_trim_filter(json_encode((isset($context["value"]) || array_key_exists("value", $context) ? $context["value"] : (function () { throw new RuntimeError('Variable "value" does not exist.', 5, $this->source); })()), twig_constant("JSON_PRETTY_PRINT"))), "html", null, true);
+                echo "
+            </textarea>
+        </div>
     ";
             } else {
                 // line 9
@@ -100,18 +91,18 @@ class __TwigTemplate_0fc424f34968357bad475d96ba9c7aa54985e2f679ec6e2d4c7a7003959
 
     public function getDebugInfo()
     {
-        return array (  78 => 14,  71 => 10,  68 => 9,  64 => 7,  55 => 5,  51 => 4,  48 => 3,  45 => 2,  43 => 1,);
+        return array (  69 => 14,  62 => 10,  59 => 9,  52 => 5,  48 => 3,  45 => 2,  43 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% if view == 'show' %}
     {% if value|length > 0 %}
-        <ul>
-            {% for element in value %}
-                <li>{{ element }}</li>
-            {% endfor %}
-        </ul>
+        <div class=\"large code\">
+            <textarea readonly class=\"form-control\">
+                {{ value|json_encode(constant('JSON_PRETTY_PRINT'))|trim }}
+            </textarea>
+        </div>
     {% else %}
         <div class=\"empty collection-empty\">
             {{ include(entity_config.templates.label_empty) }}

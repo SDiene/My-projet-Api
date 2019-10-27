@@ -40,7 +40,7 @@ class __TwigTemplate_aeb33465767e4d89f866582a9862f40076f0b1f4e3b040d5826db0e32a4
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "@EasyAdmin/default/filters.html.twig"));
 
         // line 1
-        $this->env->getRuntime("Symfony\\Component\\Form\\FormRenderer")->setTheme((isset($context["filters_form"]) || array_key_exists("filters_form", $context) ? $context["filters_form"] : (function () { throw new RuntimeError('Variable "filters_form" does not exist.', 1, $this->source); })()), $this->extensions['EasyCorp\Bundle\EasyAdminBundle\Twig\EasyAdminTwigExtension']->getBackendConfiguration("design.form_theme"), true);
+        $this->env->getRuntime("Symfony\\Component\\Form\\FormRenderer")->setTheme((isset($context["filters_form"]) || array_key_exists("filters_form", $context) ? $context["filters_form"] : (function () { throw new RuntimeError('Variable "filters_form" does not exist.', 1, $this->source); })()), $this->extensions['EasyCorp\Bundle\EasyAdminBundle\Twig\EasyAdminTwigExtension']->getBackendConfiguration("design.form_theme"), false);
         // line 2
         echo "
 ";
@@ -122,7 +122,7 @@ class __TwigTemplate_aeb33465767e4d89f866582a9862f40076f0b1f4e3b040d5826db0e32a4
 
     public function getSourceContext()
     {
-        return new Source("{% form_theme filters_form with easyadmin_config('design.form_theme') %}
+        return new Source("{% form_theme filters_form with easyadmin_config('design.form_theme') only %}
 
 {{ form_start(filters_form, { attr: {'id': filters_form.vars.id} }) }}
     {% set _entity_config = easyadmin_entity(app.request.query.get('entity')) %}

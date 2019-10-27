@@ -27,7 +27,8 @@ class __TwigTemplate_3be6f212262cf5a224d505b1cd829c0f05ef1a2d6a548c09ce82e3b3cee
         $this->blocks = [
             'body_class' => [$this, 'block_body_class'],
             'page_title' => [$this, 'block_page_title'],
-            'content_header' => [$this, 'block_content_header'],
+            'content_header_wrapper' => [$this, 'block_content_header_wrapper'],
+            'content_footer_wrapper' => [$this, 'block_content_footer_wrapper'],
             'main' => [$this, 'block_main'],
         ];
     }
@@ -95,14 +96,14 @@ class __TwigTemplate_3be6f212262cf5a224d505b1cd829c0f05ef1a2d6a548c09ce82e3b3cee
     }
 
     // line 6
-    public function block_content_header($context, array $blocks = [])
+    public function block_content_header_wrapper($context, array $blocks = [])
     {
         $macros = $this->macros;
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content_header"));
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content_header_wrapper"));
 
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content_header"));
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content_header_wrapper"));
 
         echo "";
         
@@ -114,6 +115,25 @@ class __TwigTemplate_3be6f212262cf5a224d505b1cd829c0f05ef1a2d6a548c09ce82e3b3cee
     }
 
     // line 7
+    public function block_content_footer_wrapper($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content_footer_wrapper"));
+
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content_footer_wrapper"));
+
+        echo "";
+        
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+        
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
+
+    }
+
+    // line 8
     public function block_main($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -123,15 +143,15 @@ class __TwigTemplate_3be6f212262cf5a224d505b1cd829c0f05ef1a2d6a548c09ce82e3b3cee
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "main"));
 
-        // line 8
+        // line 9
         echo "    <div class=\"error-message\">
         <h1><i class=\"fa fa-fw fa-exclamation-circle\"></i> ";
-        // line 9
+        // line 10
         $this->displayBlock("page_title", $context, $blocks);
         echo "</h1>
         ";
-        // line 10
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(twig_get_attribute($this->env, $this->source, (isset($context["exception"]) || array_key_exists("exception", $context) ? $context["exception"] : (function () { throw new RuntimeError('Variable "exception" does not exist.', 10, $this->source); })()), "publicMessage", [], "any", false, false, false, 10), twig_get_attribute($this->env, $this->source, (isset($context["exception"]) || array_key_exists("exception", $context) ? $context["exception"] : (function () { throw new RuntimeError('Variable "exception" does not exist.', 10, $this->source); })()), "translationParameters", [], "any", false, false, false, 10), "EasyAdminBundle"), "html", null, true);
+        // line 11
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(twig_get_attribute($this->env, $this->source, (isset($context["exception"]) || array_key_exists("exception", $context) ? $context["exception"] : (function () { throw new RuntimeError('Variable "exception" does not exist.', 11, $this->source); })()), "publicMessage", [], "any", false, false, false, 11), twig_get_attribute($this->env, $this->source, (isset($context["exception"]) || array_key_exists("exception", $context) ? $context["exception"] : (function () { throw new RuntimeError('Variable "exception" does not exist.', 11, $this->source); })()), "translationParameters", [], "any", false, false, false, 11), "EasyAdminBundle"), "html", null, true);
         echo "
     </div>
 ";
@@ -155,7 +175,7 @@ class __TwigTemplate_3be6f212262cf5a224d505b1cd829c0f05ef1a2d6a548c09ce82e3b3cee
 
     public function getDebugInfo()
     {
-        return array (  134 => 10,  130 => 9,  127 => 8,  117 => 7,  98 => 6,  79 => 4,  60 => 3,  38 => 1,);
+        return array (  154 => 11,  150 => 10,  147 => 9,  137 => 8,  118 => 7,  99 => 6,  80 => 4,  61 => 3,  39 => 1,);
     }
 
     public function getSourceContext()
@@ -165,7 +185,8 @@ class __TwigTemplate_3be6f212262cf5a224d505b1cd829c0f05ef1a2d6a548c09ce82e3b3cee
 {% block body_class 'error' %}
 {% block page_title %}{{ 'errors'|transchoice(1, {}, 'EasyAdminBundle') }}{% endblock %}
 
-{% block content_header '' %}
+{% block content_header_wrapper '' %}
+{% block content_footer_wrapper '' %}
 {% block main %}
     <div class=\"error-message\">
         <h1><i class=\"fa fa-fw fa-exclamation-circle\"></i> {{ block('page_title') }}</h1>

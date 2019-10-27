@@ -156,7 +156,6 @@ $catalogue = new MessageCatalogue('fr', array (
     'delete_modal.content' => 'Cette action est irréversible.',
     'delete_modal.action' => 'Supprimer',
     'action.add_new_item' => 'Ajouter un nouvel élément',
-    'action.add_another_item' => 'Ajouter un autre élément',
     'action.remove_item' => 'Supprimer l\'élément',
     'action.choose_file' => 'Choisir un fichier',
     'errors' => 'Erreur|Erreurs',
@@ -180,6 +179,7 @@ $catalogue = new MessageCatalogue('fr', array (
     'filter.label.is_greater_than_or_equal_to' => 'est supérieur(e) ou égal(e) à',
     'filter.label.is_less_than' => 'est inférieur(e) à',
     'filter.label.is_less_than_or_equal_to' => 'est inférieur(e) ou égal(e) à',
+    'filter.label.is_between' => 'est entre',
     'filter.label.contains' => 'contient',
     'filter.label.not_contains' => 'ne contient pas',
     'filter.label.starts_with' => 'commence par',
@@ -192,6 +192,7 @@ $catalogue = new MessageCatalogue('fr', array (
     'filter.label.is_after_or_same' => 'est postérieure à ou est le',
     'filter.label.is_before' => 'est antérieure à',
     'filter.label.is_before_or_same' => 'est antérieure à ou est le',
+    'security.list.hidden_results' => 'Certains résultats ne peuvent pas être affichés car vous n\'avez pas la permission',
   ),
   'messages' => 
   array (
@@ -363,7 +364,6 @@ $catalogueEn = new MessageCatalogue('en', array (
     'delete_modal.content' => 'There is no undo for this operation.',
     'delete_modal.action' => 'Delete',
     'action.add_new_item' => 'Add a new item',
-    'action.add_another_item' => 'Add another item',
     'action.remove_item' => 'Remove the item',
     'action.choose_file' => 'Choose file',
     'errors' => 'Error|Errors',
@@ -375,6 +375,7 @@ $catalogueEn = new MessageCatalogue('en', array (
     'exception.forbidden_action' => 'The requested action can\'t be performed on this item.',
     'exception.no_entities_configured' => 'The application is not properly configured.',
     'exception.undefined_entity' => 'The application is not properly configured for this kind of items.',
+    'exception.no_permission' => 'You don\'t have enough permissions to do this.',
     'login.username' => 'Username',
     'login.password' => 'Password',
     'login.sign_in' => 'Sign in',
@@ -400,6 +401,7 @@ $catalogueEn = new MessageCatalogue('en', array (
     'filter.label.is_after_or_same' => 'is after or same',
     'filter.label.is_before' => 'is before',
     'filter.label.is_before_or_same' => 'is before or same',
+    'security.list.hidden_results' => 'Some results can\'t be displayed because you don\'t have enough permissions',
   ),
   'messages' => 
   array (

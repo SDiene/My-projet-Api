@@ -52,18 +52,18 @@ class __TwigTemplate_d8ada27d07404010edad454518c2871d2d3b42b299abd2b0eac6ae0fe3b
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "@EasyAdmin/default/edit.html.twig"));
 
         // line 1
-        $this->env->getRuntime("Symfony\\Component\\Form\\FormRenderer")->setTheme((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 1, $this->source); })()), $this->extensions['EasyCorp\Bundle\EasyAdminBundle\Twig\EasyAdminTwigExtension']->getBackendConfiguration("design.form_theme"), true);
+        $this->env->getRuntime("Symfony\\Component\\Form\\FormRenderer")->setTheme((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 1, $this->source); })()), $this->extensions['EasyCorp\Bundle\EasyAdminBundle\Twig\EasyAdminTwigExtension']->getBackendConfiguration("design.form_theme"), false);
         // line 3
         $context["_entity_config"] = $this->extensions['EasyCorp\Bundle\EasyAdminBundle\Twig\EasyAdminTwigExtension']->getEntityConfiguration(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 3, $this->source); })()), "request", [], "any", false, false, false, 3), "query", [], "any", false, false, false, 3), "get", [0 => "entity"], "method", false, false, false, 3));
         // line 4
         $context["_entity_id"] = twig_get_attribute($this->env, $this->source, (isset($context["entity"]) || array_key_exists("entity", $context) ? $context["entity"] : (function () { throw new RuntimeError('Variable "entity" does not exist.', 4, $this->source); })()), twig_get_attribute($this->env, $this->source, (isset($context["_entity_config"]) || array_key_exists("_entity_config", $context) ? $context["_entity_config"] : (function () { throw new RuntimeError('Variable "_entity_config" does not exist.', 4, $this->source); })()), "primary_key_field_name", [], "any", false, false, false, 4), [], "any", false, false, false, 4);
         // line 5
-        $context["__internal_3c5cb2a2f6955a1ebd28679310f64af6d51ed2ebccc65cebb1421c04eb9db6a7"] = twig_get_attribute($this->env, $this->source, (isset($context["_entity_config"]) || array_key_exists("_entity_config", $context) ? $context["_entity_config"] : (function () { throw new RuntimeError('Variable "_entity_config" does not exist.', 5, $this->source); })()), "translation_domain", [], "any", false, false, false, 5);
+        $context["__internal_8e02d7d744a09bcb086ea3ba6498dcefb98d1ce765c4d6940d82563db6b9c154"] = twig_get_attribute($this->env, $this->source, (isset($context["_entity_config"]) || array_key_exists("_entity_config", $context) ? $context["_entity_config"] : (function () { throw new RuntimeError('Variable "_entity_config" does not exist.', 5, $this->source); })()), "translation_domain", [], "any", false, false, false, 5);
         // line 6
         $context["_trans_parameters"] = ["%entity_name%" => $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(twig_get_attribute($this->env, $this->source, (isset($context["_entity_config"]) || array_key_exists("_entity_config", $context) ? $context["_entity_config"] : (function () { throw new RuntimeError('Variable "_entity_config" does not exist.', 6, $this->source); })()), "name", [], "any", false, false, false, 6), [],         // line 5
-(isset($context["__internal_3c5cb2a2f6955a1ebd28679310f64af6d51ed2ebccc65cebb1421c04eb9db6a7"]) || array_key_exists("__internal_3c5cb2a2f6955a1ebd28679310f64af6d51ed2ebccc65cebb1421c04eb9db6a7", $context) ? $context["__internal_3c5cb2a2f6955a1ebd28679310f64af6d51ed2ebccc65cebb1421c04eb9db6a7"] : (function () { throw new RuntimeError('Variable "__internal_3c5cb2a2f6955a1ebd28679310f64af6d51ed2ebccc65cebb1421c04eb9db6a7" does not exist.', 5, $this->source); })())), "%entity_label%" => $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(twig_get_attribute($this->env, $this->source,         // line 6
+(isset($context["__internal_8e02d7d744a09bcb086ea3ba6498dcefb98d1ce765c4d6940d82563db6b9c154"]) || array_key_exists("__internal_8e02d7d744a09bcb086ea3ba6498dcefb98d1ce765c4d6940d82563db6b9c154", $context) ? $context["__internal_8e02d7d744a09bcb086ea3ba6498dcefb98d1ce765c4d6940d82563db6b9c154"] : (function () { throw new RuntimeError('Variable "__internal_8e02d7d744a09bcb086ea3ba6498dcefb98d1ce765c4d6940d82563db6b9c154" does not exist.', 5, $this->source); })())), "%entity_label%" => $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(twig_get_attribute($this->env, $this->source,         // line 6
 (isset($context["_entity_config"]) || array_key_exists("_entity_config", $context) ? $context["_entity_config"] : (function () { throw new RuntimeError('Variable "_entity_config" does not exist.', 6, $this->source); })()), "label", [], "any", false, false, false, 6), [],         // line 5
-(isset($context["__internal_3c5cb2a2f6955a1ebd28679310f64af6d51ed2ebccc65cebb1421c04eb9db6a7"]) || array_key_exists("__internal_3c5cb2a2f6955a1ebd28679310f64af6d51ed2ebccc65cebb1421c04eb9db6a7", $context) ? $context["__internal_3c5cb2a2f6955a1ebd28679310f64af6d51ed2ebccc65cebb1421c04eb9db6a7"] : (function () { throw new RuntimeError('Variable "__internal_3c5cb2a2f6955a1ebd28679310f64af6d51ed2ebccc65cebb1421c04eb9db6a7" does not exist.', 5, $this->source); })())), "%entity_id%" =>         // line 6
+(isset($context["__internal_8e02d7d744a09bcb086ea3ba6498dcefb98d1ce765c4d6940d82563db6b9c154"]) || array_key_exists("__internal_8e02d7d744a09bcb086ea3ba6498dcefb98d1ce765c4d6940d82563db6b9c154", $context) ? $context["__internal_8e02d7d744a09bcb086ea3ba6498dcefb98d1ce765c4d6940d82563db6b9c154"] : (function () { throw new RuntimeError('Variable "__internal_8e02d7d744a09bcb086ea3ba6498dcefb98d1ce765c4d6940d82563db6b9c154" does not exist.', 5, $this->source); })())), "%entity_id%" =>         // line 6
 (isset($context["_entity_id"]) || array_key_exists("_entity_id", $context) ? $context["_entity_id"] : (function () { throw new RuntimeError('Variable "_entity_id" does not exist.', 6, $this->source); })())];
         // line 8
         $this->getParent($context)->display($context, array_merge($this->blocks, $blocks));
@@ -132,13 +132,13 @@ class __TwigTemplate_d8ada27d07404010edad454518c2871d2d3b42b299abd2b0eac6ae0fe3b
         // line 16
         echo "        ";
         echo twig_escape_filter($this->env, ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["_entity_config"] ?? null), "edit", [], "any", false, true, false, 16), "title", [], "any", true, true, false, 16)) ? ($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["_entity_config"]) || array_key_exists("_entity_config", $context) ? $context["_entity_config"] : (function () { throw new RuntimeError('Variable "_entity_config" does not exist.', 16, $this->source); })()), "edit", [], "any", false, false, false, 16), "title", [], "any", false, false, false, 16), (isset($context["_trans_parameters"]) || array_key_exists("_trans_parameters", $context) ? $context["_trans_parameters"] : (function () { throw new RuntimeError('Variable "_trans_parameters" does not exist.', 16, $this->source); })()),         // line 5
-(isset($context["__internal_3c5cb2a2f6955a1ebd28679310f64af6d51ed2ebccc65cebb1421c04eb9db6a7"]) || array_key_exists("__internal_3c5cb2a2f6955a1ebd28679310f64af6d51ed2ebccc65cebb1421c04eb9db6a7", $context) ? $context["__internal_3c5cb2a2f6955a1ebd28679310f64af6d51ed2ebccc65cebb1421c04eb9db6a7"] : (function () { throw new RuntimeError('Variable "__internal_3c5cb2a2f6955a1ebd28679310f64af6d51ed2ebccc65cebb1421c04eb9db6a7" does not exist.', 5, $this->source); })()))) : (        // line 16
+(isset($context["__internal_8e02d7d744a09bcb086ea3ba6498dcefb98d1ce765c4d6940d82563db6b9c154"]) || array_key_exists("__internal_8e02d7d744a09bcb086ea3ba6498dcefb98d1ce765c4d6940d82563db6b9c154", $context) ? $context["__internal_8e02d7d744a09bcb086ea3ba6498dcefb98d1ce765c4d6940d82563db6b9c154"] : (function () { throw new RuntimeError('Variable "__internal_8e02d7d744a09bcb086ea3ba6498dcefb98d1ce765c4d6940d82563db6b9c154" does not exist.', 5, $this->source); })()))) : (        // line 16
 (isset($context["_default_title"]) || array_key_exists("_default_title", $context) ? $context["_default_title"] : (function () { throw new RuntimeError('Variable "_default_title" does not exist.', 16, $this->source); })()))), "html", null, true);
         echo "
     ";
-        $___internal_7862bb04275352831e5c2c4fe336235a10b852bc53d9abf9a40f215d43a61ba7_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
+        $___internal_e3877ffcc95d779dc4446cb125f2c0f96335ed5644ad8f287fa23f16bf84c8c6_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
         // line 14
-        echo twig_spaceless($___internal_7862bb04275352831e5c2c4fe336235a10b852bc53d9abf9a40f215d43a61ba7_);
+        echo twig_spaceless($___internal_e3877ffcc95d779dc4446cb125f2c0f96335ed5644ad8f287fa23f16bf84c8c6_);
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -266,29 +266,51 @@ class __TwigTemplate_d8ada27d07404010edad454518c2871d2d3b42b299abd2b0eac6ae0fe3b
         echo twig_escape_filter($this->env, twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("form.are_you_sure", [], "EasyAdminBundle"), "js"), "html", null, true);
         echo "' });
 
+            const entityForm = document.querySelector('form.edit-form');
+            const formSubmitButton = entityForm.querySelector('button[type=\"submit\"]');
+            const inputFieldsSelector = 'input,select,textarea';
+
+            // Adding visual feedback for invalid fields: any \".form-group\" with invalid fields
+            // receives \"has-error\" class. The class is removed on click on the \".form-group\"
+            // itself to support custom/complex fields.
+            formSubmitButton.addEventListener('click', function() {
+                entityForm.querySelectorAll(inputFieldsSelector).forEach(function (input) {
+                    if (!input.validity.valid) {
+                        const formGroup = input.closest('div.form-group');
+
+                        formGroup.classList.add('has-error');
+
+                        formGroup.addEventListener('click', function onFormGroupClick() {
+                            formGroup.classList.remove('has-error');
+                            formGroup.removeEventListener('click', onFormGroupClick);
+                        });
+                    }
+                });
+            });
+
             // forms with tabs require some special treatment for errors. The problem
             // is when the field with errors is included in a tab not currently visible.
             // Browser shows this error \"An invalid form control with name='...' is not focusable.\"
             // So, the user clicks on Submit button, the form is not submitted and the error
             // is not displayed. This JavaScript code ensures that each tab shows a badge with
             // the number of errors in it.
-            const entityForm = document.querySelector('form.edit-form');
-            const formSubmitButton = entityForm.querySelector('button[type=\"submit\"]');
             formSubmitButton.addEventListener('click', function() {
                 const formTabPanes = entityForm.querySelectorAll('.tab-pane');
                 if (0 === formTabPanes.length) {
                     return;
                 }
 
-                formTabPanes.forEach(function (tabPane, tabIndex) {
+                let firstNavTabItemWithError = null;
+
+                formTabPanes.forEach(function (tabPane) {
                     let tabPaneNumErrors = 0;
-                    tabPane.querySelectorAll('input').forEach(function (input) {
+                    tabPane.querySelectorAll(inputFieldsSelector).forEach(function (input) {
                         if (!input.validity.valid) {
                             tabPaneNumErrors++;
                         }
                     });
 
-                    let navTabItem = entityForm.querySelector('.nav-item:nth-child(' + (tabIndex + 1) + ') a');
+                    let navTabItem = entityForm.querySelector('.nav-item a[href=\"#' + tabPane.id + '\"]');
                     let existingErrorBadge = navTabItem.querySelector('span.badge.badge-danger');
                     if (null !== existingErrorBadge) {
                         navTabItem.removeChild(existingErrorBadge);
@@ -301,10 +323,16 @@ class __TwigTemplate_d8ada27d07404010edad454518c2871d2d3b42b299abd2b0eac6ae0fe3b
                         newErrorBadge.textContent = tabPaneNumErrors;
 
                         navTabItem.appendChild(newErrorBadge);
-                    }
 
-                    tabPaneNumErrors = 0;
+                        if (null === firstNavTabItemWithError) {
+                            firstNavTabItemWithError = navTabItem;
+                        }
+                    }
                 });
+
+                if (firstNavTabItemWithError) {
+                    firstNavTabItemWithError.click();
+                }
             });
 
             \$('a.action-delete').on('click', function(e) {
@@ -320,7 +348,7 @@ class __TwigTemplate_d8ada27d07404010edad454518c2871d2d3b42b299abd2b0eac6ae0fe3b
     </script>
 
     ";
-        // line 99
+        // line 127
         echo twig_include($this->env, $context, "@EasyAdmin/default/includes/_select2_widget.html.twig");
         echo "
 ";
@@ -344,12 +372,12 @@ class __TwigTemplate_d8ada27d07404010edad454518c2871d2d3b42b299abd2b0eac6ae0fe3b
 
     public function getDebugInfo()
     {
-        return array (  324 => 99,  266 => 44,  258 => 40,  248 => 39,  237 => 35,  235 => 34,  234 => 33,  233 => 32,  232 => 31,  231 => 30,  229 => 28,  219 => 27,  206 => 24,  196 => 23,  186 => 27,  183 => 26,  180 => 23,  170 => 22,  151 => 20,  141 => 14,  136 => 16,  135 => 5,  133 => 16,  130 => 15,  127 => 14,  117 => 13,  98 => 11,  79 => 10,  69 => 8,  67 => 6,  66 => 5,  65 => 6,  64 => 5,  63 => 6,  61 => 5,  59 => 4,  57 => 3,  55 => 1,  42 => 8,);
+        return array (  352 => 127,  266 => 44,  258 => 40,  248 => 39,  237 => 35,  235 => 34,  234 => 33,  233 => 32,  232 => 31,  231 => 30,  229 => 28,  219 => 27,  206 => 24,  196 => 23,  186 => 27,  183 => 26,  180 => 23,  170 => 22,  151 => 20,  141 => 14,  136 => 16,  135 => 5,  133 => 16,  130 => 15,  127 => 14,  117 => 13,  98 => 11,  79 => 10,  69 => 8,  67 => 6,  66 => 5,  65 => 6,  64 => 5,  63 => 6,  61 => 5,  59 => 4,  57 => 3,  55 => 1,  42 => 8,);
     }
 
     public function getSourceContext()
     {
-        return new Source("{% form_theme form with easyadmin_config('design.form_theme') %}
+        return new Source("{% form_theme form with easyadmin_config('design.form_theme') only %}
 
 {% set _entity_config = easyadmin_entity(app.request.query.get('entity')) %}
 {% set _entity_id = attribute(entity, _entity_config.primary_key_field_name) %}
@@ -394,29 +422,51 @@ class __TwigTemplate_d8ada27d07404010edad454518c2871d2d3b42b299abd2b0eac6ae0fe3b
         \$(function() {
             \$('.edit-form').areYouSure({ 'message': '{{ 'form.are_you_sure'|trans({}, 'EasyAdminBundle')|e('js') }}' });
 
+            const entityForm = document.querySelector('form.edit-form');
+            const formSubmitButton = entityForm.querySelector('button[type=\"submit\"]');
+            const inputFieldsSelector = 'input,select,textarea';
+
+            // Adding visual feedback for invalid fields: any \".form-group\" with invalid fields
+            // receives \"has-error\" class. The class is removed on click on the \".form-group\"
+            // itself to support custom/complex fields.
+            formSubmitButton.addEventListener('click', function() {
+                entityForm.querySelectorAll(inputFieldsSelector).forEach(function (input) {
+                    if (!input.validity.valid) {
+                        const formGroup = input.closest('div.form-group');
+
+                        formGroup.classList.add('has-error');
+
+                        formGroup.addEventListener('click', function onFormGroupClick() {
+                            formGroup.classList.remove('has-error');
+                            formGroup.removeEventListener('click', onFormGroupClick);
+                        });
+                    }
+                });
+            });
+
             // forms with tabs require some special treatment for errors. The problem
             // is when the field with errors is included in a tab not currently visible.
             // Browser shows this error \"An invalid form control with name='...' is not focusable.\"
             // So, the user clicks on Submit button, the form is not submitted and the error
             // is not displayed. This JavaScript code ensures that each tab shows a badge with
             // the number of errors in it.
-            const entityForm = document.querySelector('form.edit-form');
-            const formSubmitButton = entityForm.querySelector('button[type=\"submit\"]');
             formSubmitButton.addEventListener('click', function() {
                 const formTabPanes = entityForm.querySelectorAll('.tab-pane');
                 if (0 === formTabPanes.length) {
                     return;
                 }
 
-                formTabPanes.forEach(function (tabPane, tabIndex) {
+                let firstNavTabItemWithError = null;
+
+                formTabPanes.forEach(function (tabPane) {
                     let tabPaneNumErrors = 0;
-                    tabPane.querySelectorAll('input').forEach(function (input) {
+                    tabPane.querySelectorAll(inputFieldsSelector).forEach(function (input) {
                         if (!input.validity.valid) {
                             tabPaneNumErrors++;
                         }
                     });
 
-                    let navTabItem = entityForm.querySelector('.nav-item:nth-child(' + (tabIndex + 1) + ') a');
+                    let navTabItem = entityForm.querySelector('.nav-item a[href=\"#' + tabPane.id + '\"]');
                     let existingErrorBadge = navTabItem.querySelector('span.badge.badge-danger');
                     if (null !== existingErrorBadge) {
                         navTabItem.removeChild(existingErrorBadge);
@@ -429,10 +479,16 @@ class __TwigTemplate_d8ada27d07404010edad454518c2871d2d3b42b299abd2b0eac6ae0fe3b
                         newErrorBadge.textContent = tabPaneNumErrors;
 
                         navTabItem.appendChild(newErrorBadge);
-                    }
 
-                    tabPaneNumErrors = 0;
+                        if (null === firstNavTabItemWithError) {
+                            firstNavTabItemWithError = navTabItem;
+                        }
+                    }
                 });
+
+                if (firstNavTabItemWithError) {
+                    firstNavTabItemWithError.click();
+                }
             });
 
             \$('a.action-delete').on('click', function(e) {

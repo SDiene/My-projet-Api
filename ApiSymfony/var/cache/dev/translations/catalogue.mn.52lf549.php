@@ -201,7 +201,6 @@ $catalogueEn = new MessageCatalogue('en', array (
     'delete_modal.content' => 'There is no undo for this operation.',
     'delete_modal.action' => 'Delete',
     'action.add_new_item' => 'Add a new item',
-    'action.add_another_item' => 'Add another item',
     'action.remove_item' => 'Remove the item',
     'action.choose_file' => 'Choose file',
     'errors' => 'Error|Errors',
@@ -213,6 +212,7 @@ $catalogueEn = new MessageCatalogue('en', array (
     'exception.forbidden_action' => 'The requested action can\'t be performed on this item.',
     'exception.no_entities_configured' => 'The application is not properly configured.',
     'exception.undefined_entity' => 'The application is not properly configured for this kind of items.',
+    'exception.no_permission' => 'You don\'t have enough permissions to do this.',
     'login.username' => 'Username',
     'login.password' => 'Password',
     'login.sign_in' => 'Sign in',
@@ -238,6 +238,7 @@ $catalogueEn = new MessageCatalogue('en', array (
     'filter.label.is_after_or_same' => 'is after or same',
     'filter.label.is_before' => 'is before',
     'filter.label.is_before_or_same' => 'is before or same',
+    'security.list.hidden_results' => 'Some results can\'t be displayed because you don\'t have enough permissions',
   ),
   'messages' => 
   array (

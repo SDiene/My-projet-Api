@@ -65,8 +65,10 @@ class __TwigTemplate_33c227dc2354aea2d5bc3b84e6701cbf0b623716c5d68cbd1dcf7f0997f
                         echo "                    <div class=\"alert alert-";
                         echo twig_escape_filter($this->env, $context["label"], "html", null, true);
                         echo "\">
+                        <button type=\"button\" class=\"alert-close\" onclick=\"this.closest('div').style.display='none'\">&times;</button>
+
                         ";
-                        // line 9
+                        // line 11
                         echo twig_escape_filter($this->env, strip_tags($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans($context["message"])), "html", null, true);
                         echo "
                     </div>
@@ -75,13 +77,13 @@ class __TwigTemplate_33c227dc2354aea2d5bc3b84e6701cbf0b623716c5d68cbd1dcf7f0997f
                     $_parent = $context['_parent'];
                     unset($context['_seq'], $context['_iterated'], $context['_key'], $context['message'], $context['_parent'], $context['loop']);
                     $context = array_intersect_key($context, $_parent) + $_parent;
-                    // line 12
+                    // line 14
                     echo "            ";
                 }
                 $_parent = $context['_parent'];
                 unset($context['_seq'], $context['_iterated'], $context['label'], $context['messages'], $context['_parent'], $context['loop']);
                 $context = array_intersect_key($context, $_parent) + $_parent;
-                // line 13
+                // line 15
                 echo "        </div>
     ";
             }
@@ -106,7 +108,7 @@ class __TwigTemplate_33c227dc2354aea2d5bc3b84e6701cbf0b623716c5d68cbd1dcf7f0997f
 
     public function getDebugInfo()
     {
-        return array (  85 => 13,  79 => 12,  70 => 9,  65 => 8,  60 => 7,  56 => 6,  53 => 5,  51 => 4,  48 => 3,  45 => 2,  43 => 1,);
+        return array (  87 => 15,  81 => 14,  72 => 11,  65 => 8,  60 => 7,  56 => 6,  53 => 5,  51 => 4,  48 => 3,  45 => 2,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -119,6 +121,8 @@ class __TwigTemplate_33c227dc2354aea2d5bc3b84e6701cbf0b623716c5d68cbd1dcf7f0997f
             {% for label, messages in _flash_messages %}
                 {% for message in messages %}
                     <div class=\"alert alert-{{ label }}\">
+                        <button type=\"button\" class=\"alert-close\" onclick=\"this.closest('div').style.display='none'\">&times;</button>
+
                         {{ message|trans|striptags }}
                     </div>
                 {% endfor %}

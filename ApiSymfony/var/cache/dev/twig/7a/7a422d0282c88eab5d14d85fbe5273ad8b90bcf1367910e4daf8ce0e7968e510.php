@@ -64,12 +64,12 @@ class __TwigTemplate_56d2abfcffe67fb581535824e563508f0ab6a1a32ac3c3828e026e7ed34
         // line 1
         $context["_entity_config"] = $this->extensions['EasyCorp\Bundle\EasyAdminBundle\Twig\EasyAdminTwigExtension']->getEntityConfiguration(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 1, $this->source); })()), "request", [], "any", false, false, false, 1), "query", [], "any", false, false, false, 1), "get", [0 => "entity"], "method", false, false, false, 1));
         // line 2
-        $context["__internal_8faece2ae5de8a1ef2d8911e9cc3eb1825b6d5a4274c565f49cd96bc3c49c626"] = twig_get_attribute($this->env, $this->source, (isset($context["_entity_config"]) || array_key_exists("_entity_config", $context) ? $context["_entity_config"] : (function () { throw new RuntimeError('Variable "_entity_config" does not exist.', 2, $this->source); })()), "translation_domain", [], "any", false, false, false, 2);
+        $context["__internal_a8856132fe056b82e7bc7d7226f60c28087f843793d3ca1eebf10b0766725c01"] = twig_get_attribute($this->env, $this->source, (isset($context["_entity_config"]) || array_key_exists("_entity_config", $context) ? $context["_entity_config"] : (function () { throw new RuntimeError('Variable "_entity_config" does not exist.', 2, $this->source); })()), "translation_domain", [], "any", false, false, false, 2);
         // line 3
         $context["_trans_parameters"] = ["%entity_name%" => $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(twig_get_attribute($this->env, $this->source, (isset($context["_entity_config"]) || array_key_exists("_entity_config", $context) ? $context["_entity_config"] : (function () { throw new RuntimeError('Variable "_entity_config" does not exist.', 3, $this->source); })()), "name", [], "any", false, false, false, 3), [],         // line 2
-(isset($context["__internal_8faece2ae5de8a1ef2d8911e9cc3eb1825b6d5a4274c565f49cd96bc3c49c626"]) || array_key_exists("__internal_8faece2ae5de8a1ef2d8911e9cc3eb1825b6d5a4274c565f49cd96bc3c49c626", $context) ? $context["__internal_8faece2ae5de8a1ef2d8911e9cc3eb1825b6d5a4274c565f49cd96bc3c49c626"] : (function () { throw new RuntimeError('Variable "__internal_8faece2ae5de8a1ef2d8911e9cc3eb1825b6d5a4274c565f49cd96bc3c49c626" does not exist.', 2, $this->source); })())), "%entity_label%" => $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(twig_get_attribute($this->env, $this->source,         // line 3
+(isset($context["__internal_a8856132fe056b82e7bc7d7226f60c28087f843793d3ca1eebf10b0766725c01"]) || array_key_exists("__internal_a8856132fe056b82e7bc7d7226f60c28087f843793d3ca1eebf10b0766725c01", $context) ? $context["__internal_a8856132fe056b82e7bc7d7226f60c28087f843793d3ca1eebf10b0766725c01"] : (function () { throw new RuntimeError('Variable "__internal_a8856132fe056b82e7bc7d7226f60c28087f843793d3ca1eebf10b0766725c01" does not exist.', 2, $this->source); })())), "%entity_label%" => $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(twig_get_attribute($this->env, $this->source,         // line 3
 (isset($context["_entity_config"]) || array_key_exists("_entity_config", $context) ? $context["_entity_config"] : (function () { throw new RuntimeError('Variable "_entity_config" does not exist.', 3, $this->source); })()), "label", [], "any", false, false, false, 3), [],         // line 2
-(isset($context["__internal_8faece2ae5de8a1ef2d8911e9cc3eb1825b6d5a4274c565f49cd96bc3c49c626"]) || array_key_exists("__internal_8faece2ae5de8a1ef2d8911e9cc3eb1825b6d5a4274c565f49cd96bc3c49c626", $context) ? $context["__internal_8faece2ae5de8a1ef2d8911e9cc3eb1825b6d5a4274c565f49cd96bc3c49c626"] : (function () { throw new RuntimeError('Variable "__internal_8faece2ae5de8a1ef2d8911e9cc3eb1825b6d5a4274c565f49cd96bc3c49c626" does not exist.', 2, $this->source); })()))];
+(isset($context["__internal_a8856132fe056b82e7bc7d7226f60c28087f843793d3ca1eebf10b0766725c01"]) || array_key_exists("__internal_a8856132fe056b82e7bc7d7226f60c28087f843793d3ca1eebf10b0766725c01", $context) ? $context["__internal_a8856132fe056b82e7bc7d7226f60c28087f843793d3ca1eebf10b0766725c01"] : (function () { throw new RuntimeError('Variable "__internal_a8856132fe056b82e7bc7d7226f60c28087f843793d3ca1eebf10b0766725c01" does not exist.', 2, $this->source); })()))];
         // line 7
         $context["_request_parameters"] = twig_array_merge(twig_array_merge(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 7, $this->source); })()), "request", [], "any", false, false, false, 7), "query", [], "any", false, false, false, 7), "all", [], "any", false, false, false, 7), (((isset($context["_request_parameters"]) || array_key_exists("_request_parameters", $context))) ? (_twig_default_filter((isset($context["_request_parameters"]) || array_key_exists("_request_parameters", $context) ? $context["_request_parameters"] : (function () { throw new RuntimeError('Variable "_request_parameters" does not exist.', 7, $this->source); })()), [])) : ([]))), ["action" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source,         // line 8
 (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 8, $this->source); })()), "request", [], "any", false, false, false, 8), "get", [0 => "action"], "method", false, false, false, 8), "entity" => twig_get_attribute($this->env, $this->source,         // line 9
@@ -162,7 +162,7 @@ class __TwigTemplate_56d2abfcffe67fb581535824e563508f0ab6a1a32ac3c3828e026e7ed34
             // line 36
             echo "            ";
             echo ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["_entity_config"] ?? null), "search", [], "any", false, true, false, 36), "title", [], "any", true, true, false, 36)) ? ($this->extensions['EasyCorp\Bundle\EasyAdminBundle\Twig\EasyAdminTwigExtension']->transchoice(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["_entity_config"]) || array_key_exists("_entity_config", $context) ? $context["_entity_config"] : (function () { throw new RuntimeError('Variable "_entity_config" does not exist.', 36, $this->source); })()), "search", [], "any", false, false, false, 36), "title", [], "any", false, false, false, 36), twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 36, $this->source); })()), "nbResults", [], "any", false, false, false, 36), [],             // line 2
-(isset($context["__internal_8faece2ae5de8a1ef2d8911e9cc3eb1825b6d5a4274c565f49cd96bc3c49c626"]) || array_key_exists("__internal_8faece2ae5de8a1ef2d8911e9cc3eb1825b6d5a4274c565f49cd96bc3c49c626", $context) ? $context["__internal_8faece2ae5de8a1ef2d8911e9cc3eb1825b6d5a4274c565f49cd96bc3c49c626"] : (function () { throw new RuntimeError('Variable "__internal_8faece2ae5de8a1ef2d8911e9cc3eb1825b6d5a4274c565f49cd96bc3c49c626" does not exist.', 2, $this->source); })()))) : (            // line 36
+(isset($context["__internal_a8856132fe056b82e7bc7d7226f60c28087f843793d3ca1eebf10b0766725c01"]) || array_key_exists("__internal_a8856132fe056b82e7bc7d7226f60c28087f843793d3ca1eebf10b0766725c01", $context) ? $context["__internal_a8856132fe056b82e7bc7d7226f60c28087f843793d3ca1eebf10b0766725c01"] : (function () { throw new RuntimeError('Variable "__internal_a8856132fe056b82e7bc7d7226f60c28087f843793d3ca1eebf10b0766725c01" does not exist.', 2, $this->source); })()))) : (            // line 36
 (isset($context["_default_title"]) || array_key_exists("_default_title", $context) ? $context["_default_title"] : (function () { throw new RuntimeError('Variable "_default_title" does not exist.', 36, $this->source); })())));
             echo "
         ";
@@ -173,16 +173,16 @@ class __TwigTemplate_56d2abfcffe67fb581535824e563508f0ab6a1a32ac3c3828e026e7ed34
             // line 39
             echo "            ";
             echo ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["_entity_config"] ?? null), "list", [], "any", false, true, false, 39), "title", [], "any", true, true, false, 39)) ? ($this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["_entity_config"]) || array_key_exists("_entity_config", $context) ? $context["_entity_config"] : (function () { throw new RuntimeError('Variable "_entity_config" does not exist.', 39, $this->source); })()), "list", [], "any", false, false, false, 39), "title", [], "any", false, false, false, 39), (isset($context["_trans_parameters"]) || array_key_exists("_trans_parameters", $context) ? $context["_trans_parameters"] : (function () { throw new RuntimeError('Variable "_trans_parameters" does not exist.', 39, $this->source); })()),             // line 2
-(isset($context["__internal_8faece2ae5de8a1ef2d8911e9cc3eb1825b6d5a4274c565f49cd96bc3c49c626"]) || array_key_exists("__internal_8faece2ae5de8a1ef2d8911e9cc3eb1825b6d5a4274c565f49cd96bc3c49c626", $context) ? $context["__internal_8faece2ae5de8a1ef2d8911e9cc3eb1825b6d5a4274c565f49cd96bc3c49c626"] : (function () { throw new RuntimeError('Variable "__internal_8faece2ae5de8a1ef2d8911e9cc3eb1825b6d5a4274c565f49cd96bc3c49c626" does not exist.', 2, $this->source); })()))) : (            // line 39
+(isset($context["__internal_a8856132fe056b82e7bc7d7226f60c28087f843793d3ca1eebf10b0766725c01"]) || array_key_exists("__internal_a8856132fe056b82e7bc7d7226f60c28087f843793d3ca1eebf10b0766725c01", $context) ? $context["__internal_a8856132fe056b82e7bc7d7226f60c28087f843793d3ca1eebf10b0766725c01"] : (function () { throw new RuntimeError('Variable "__internal_a8856132fe056b82e7bc7d7226f60c28087f843793d3ca1eebf10b0766725c01" does not exist.', 2, $this->source); })()))) : (            // line 39
 (isset($context["_default_title"]) || array_key_exists("_default_title", $context) ? $context["_default_title"] : (function () { throw new RuntimeError('Variable "_default_title" does not exist.', 39, $this->source); })())));
             echo "
         ";
         }
         // line 41
         echo "    ";
-        $___internal_eb536d518fd3095cf7c52223bffff9e526ddc65aa0940c02a98e293e68523ff5_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
+        $___internal_93995d65ea39f861edd2c96b23f572618da9da8d864dbb2ad6a4bb1dc53bead1_ = ('' === $tmp = ob_get_clean()) ? '' : new Markup($tmp, $this->env->getCharset());
         // line 33
-        echo twig_spaceless($___internal_eb536d518fd3095cf7c52223bffff9e526ddc65aa0940c02a98e293e68523ff5_);
+        echo twig_spaceless($___internal_93995d65ea39f861edd2c96b23f572618da9da8d864dbb2ad6a4bb1dc53bead1_);
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -351,7 +351,7 @@ class __TwigTemplate_56d2abfcffe67fb581535824e563508f0ab6a1a32ac3c3828e026e7ed34
         echo twig_escape_filter($this->env, ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["app"] ?? null), "request", [], "any", false, true, false, 73), "get", [0 => "query"], "method", true, true, false, 73)) ? (_twig_default_filter(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["app"] ?? null), "request", [], "any", false, true, false, 73), "get", [0 => "query"], "method", false, false, false, 73), "")) : ("")), "html", null, true);
         echo "\" placeholder=\"";
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(((twig_get_attribute($this->env, $this->source, ($context["_action"] ?? null), "label", [], "any", true, true, false, 73)) ? (_twig_default_filter(twig_get_attribute($this->env, $this->source, ($context["_action"] ?? null), "label", [], "any", false, false, false, 73), "action.search")) : ("action.search")), (isset($context["_trans_parameters"]) || array_key_exists("_trans_parameters", $context) ? $context["_trans_parameters"] : (function () { throw new RuntimeError('Variable "_trans_parameters" does not exist.', 73, $this->source); })()),         // line 2
-(isset($context["__internal_8faece2ae5de8a1ef2d8911e9cc3eb1825b6d5a4274c565f49cd96bc3c49c626"]) || array_key_exists("__internal_8faece2ae5de8a1ef2d8911e9cc3eb1825b6d5a4274c565f49cd96bc3c49c626", $context) ? $context["__internal_8faece2ae5de8a1ef2d8911e9cc3eb1825b6d5a4274c565f49cd96bc3c49c626"] : (function () { throw new RuntimeError('Variable "__internal_8faece2ae5de8a1ef2d8911e9cc3eb1825b6d5a4274c565f49cd96bc3c49c626" does not exist.', 2, $this->source); })())), "html", null, true);
+(isset($context["__internal_a8856132fe056b82e7bc7d7226f60c28087f843793d3ca1eebf10b0766725c01"]) || array_key_exists("__internal_a8856132fe056b82e7bc7d7226f60c28087f843793d3ca1eebf10b0766725c01", $context) ? $context["__internal_a8856132fe056b82e7bc7d7226f60c28087f843793d3ca1eebf10b0766725c01"] : (function () { throw new RuntimeError('Variable "__internal_a8856132fe056b82e7bc7d7226f60c28087f843793d3ca1eebf10b0766725c01" does not exist.', 2, $this->source); })())), "html", null, true);
         // line 73
         echo "\">
                             </div>
@@ -445,7 +445,7 @@ class __TwigTemplate_56d2abfcffe67fb581535824e563508f0ab6a1a32ac3c3828e026e7ed34
         // line 104
         echo "                    ";
         (((twig_get_attribute($this->env, $this->source, ($context["_action"] ?? null), "label", [], "any", true, true, false, 104) &&  !twig_test_empty(twig_get_attribute($this->env, $this->source, (isset($context["_action"]) || array_key_exists("_action", $context) ? $context["_action"] : (function () { throw new RuntimeError('Variable "_action" does not exist.', 104, $this->source); })()), "label", [], "any", false, false, false, 104)))) ? (print (twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(twig_get_attribute($this->env, $this->source, (isset($context["_action"]) || array_key_exists("_action", $context) ? $context["_action"] : (function () { throw new RuntimeError('Variable "_action" does not exist.', 104, $this->source); })()), "label", [], "any", false, false, false, 104), (isset($context["_trans_parameters"]) || array_key_exists("_trans_parameters", $context) ? $context["_trans_parameters"] : (function () { throw new RuntimeError('Variable "_trans_parameters" does not exist.', 104, $this->source); })()),         // line 2
-(isset($context["__internal_8faece2ae5de8a1ef2d8911e9cc3eb1825b6d5a4274c565f49cd96bc3c49c626"]) || array_key_exists("__internal_8faece2ae5de8a1ef2d8911e9cc3eb1825b6d5a4274c565f49cd96bc3c49c626", $context) ? $context["__internal_8faece2ae5de8a1ef2d8911e9cc3eb1825b6d5a4274c565f49cd96bc3c49c626"] : (function () { throw new RuntimeError('Variable "__internal_8faece2ae5de8a1ef2d8911e9cc3eb1825b6d5a4274c565f49cd96bc3c49c626" does not exist.', 2, $this->source); })())), "html", null, true))) : (print ("")));
+(isset($context["__internal_a8856132fe056b82e7bc7d7226f60c28087f843793d3ca1eebf10b0766725c01"]) || array_key_exists("__internal_a8856132fe056b82e7bc7d7226f60c28087f843793d3ca1eebf10b0766725c01", $context) ? $context["__internal_a8856132fe056b82e7bc7d7226f60c28087f843793d3ca1eebf10b0766725c01"] : (function () { throw new RuntimeError('Variable "__internal_a8856132fe056b82e7bc7d7226f60c28087f843793d3ca1eebf10b0766725c01" does not exist.', 2, $this->source); })())), "html", null, true))) : (print ("")));
         // line 104
         echo "
                 </a>
@@ -476,7 +476,7 @@ class __TwigTemplate_56d2abfcffe67fb581535824e563508f0ab6a1a32ac3c3828e026e7ed34
             echo "        <div class=\"batch-actions\" style=\"display: none\">
             ";
             // line 114
-            $this->env->getRuntime("Symfony\\Component\\Form\\FormRenderer")->setTheme((isset($context["batch_form"]) || array_key_exists("batch_form", $context) ? $context["batch_form"] : (function () { throw new RuntimeError('Variable "batch_form" does not exist.', 114, $this->source); })()), $this->extensions['EasyCorp\Bundle\EasyAdminBundle\Twig\EasyAdminTwigExtension']->getBackendConfiguration("design.form_theme"), true);
+            $this->env->getRuntime("Symfony\\Component\\Form\\FormRenderer")->setTheme((isset($context["batch_form"]) || array_key_exists("batch_form", $context) ? $context["batch_form"] : (function () { throw new RuntimeError('Variable "batch_form" does not exist.', 114, $this->source); })()), $this->extensions['EasyCorp\Bundle\EasyAdminBundle\Twig\EasyAdminTwigExtension']->getBackendConfiguration("design.form_theme"), false);
             // line 115
             echo "            ";
             echo             $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["batch_form"]) || array_key_exists("batch_form", $context) ? $context["batch_form"] : (function () { throw new RuntimeError('Variable "batch_form" does not exist.', 115, $this->source); })()), 'form');
@@ -539,27 +539,33 @@ class __TwigTemplate_56d2abfcffe67fb581535824e563508f0ab6a1a32ac3c3828e026e7ed34
 
         // line 129
         echo "    ";
-        $context["_list_item_actions"] = $this->extensions['EasyCorp\Bundle\EasyAdminBundle\Twig\EasyAdminTwigExtension']->getActionsForItem("list", twig_get_attribute($this->env, $this->source, (isset($context["_entity_config"]) || array_key_exists("_entity_config", $context) ? $context["_entity_config"] : (function () { throw new RuntimeError('Variable "_entity_config" does not exist.', 129, $this->source); })()), "name", [], "any", false, false, false, 129));
+        $context["_fields_visible_by_user"] = twig_array_filter((isset($context["fields"]) || array_key_exists("fields", $context) ? $context["fields"] : (function () { throw new RuntimeError('Variable "fields" does not exist.', 129, $this->source); })()), function ($__metadata__, $__field__) use ($context) { $context["metadata"] = $__metadata__; $context["field"] = $__field__; return $this->extensions['EasyCorp\Bundle\EasyAdminBundle\Twig\EasyAdminTwigExtension']->isGranted(twig_get_attribute($this->env, $this->source, (isset($context["metadata"]) || array_key_exists("metadata", $context) ? $context["metadata"] : (function () { throw new RuntimeError('Variable "metadata" does not exist.', 129, $this->source); })()), "permission", [], "any", false, false, false, 129)); });
         // line 130
+        echo "    ";
+        $context["_number_of_hidden_results"] = 0;
+        // line 131
+        echo "    ";
+        $context["_list_item_actions"] = $this->extensions['EasyCorp\Bundle\EasyAdminBundle\Twig\EasyAdminTwigExtension']->getActionsForItem("list", twig_get_attribute($this->env, $this->source, (isset($context["_entity_config"]) || array_key_exists("_entity_config", $context) ? $context["_entity_config"] : (function () { throw new RuntimeError('Variable "_entity_config" does not exist.', 131, $this->source); })()), "name", [], "any", false, false, false, 131));
+        // line 132
         echo "
     <table class=\"table datagrid\">
         <thead>
         ";
-        // line 133
+        // line 135
         $this->displayBlock('table_head', $context, $blocks);
-        // line 163
+        // line 165
         echo "        </thead>
 
         <tbody>
         ";
-        // line 166
+        // line 168
         $this->displayBlock('table_body', $context, $blocks);
-        // line 213
+        // line 227
         echo "        </tbody>
     </table>
 
     ";
-        // line 216
+        // line 230
         $this->displayBlock('delete_form', $context, $blocks);
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -569,7 +575,7 @@ class __TwigTemplate_56d2abfcffe67fb581535824e563508f0ab6a1a32ac3c3828e026e7ed34
 
     }
 
-    // line 133
+    // line 135
     public function block_table_head($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -579,99 +585,99 @@ class __TwigTemplate_56d2abfcffe67fb581535824e563508f0ab6a1a32ac3c3828e026e7ed34
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "table_head"));
 
-        // line 134
+        // line 136
         echo "            <tr>
                 ";
-        // line 135
-        if ((isset($context["_has_batch_actions"]) || array_key_exists("_has_batch_actions", $context) ? $context["_has_batch_actions"] : (function () { throw new RuntimeError('Variable "_has_batch_actions" does not exist.', 135, $this->source); })())) {
-            // line 136
+        // line 137
+        if ((isset($context["_has_batch_actions"]) || array_key_exists("_has_batch_actions", $context) ? $context["_has_batch_actions"] : (function () { throw new RuntimeError('Variable "_has_batch_actions" does not exist.', 137, $this->source); })())) {
+            // line 138
             echo "                    <th width=\"1px\"><span><input type=\"checkbox\" class=\"form-batch-checkbox-all\"></span></th>
                 ";
         }
-        // line 138
+        // line 140
         echo "
                 ";
-        // line 139
+        // line 141
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["fields"]) || array_key_exists("fields", $context) ? $context["fields"] : (function () { throw new RuntimeError('Variable "fields" does not exist.', 139, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["_fields_visible_by_user"]) || array_key_exists("_fields_visible_by_user", $context) ? $context["_fields_visible_by_user"] : (function () { throw new RuntimeError('Variable "_fields_visible_by_user" does not exist.', 141, $this->source); })()));
         foreach ($context['_seq'] as $context["field"] => $context["metadata"]) {
-            // line 140
-            echo "                    ";
-            $context["isSortingField"] = ((twig_get_attribute($this->env, $this->source, $context["metadata"], "property", [], "any", false, false, false, 140) == twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 140, $this->source); })()), "request", [], "any", false, false, false, 140), "get", [0 => "sortField"], "method", false, false, false, 140)) || (("association" == twig_get_attribute($this->env, $this->source, $context["metadata"], "type", [], "any", false, false, false, 140)) && (is_string($__internal_f607aeef2c31a95a7bf963452dff024ffaeb6aafbe4603f9ca3bec57be8633f4 = twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 140, $this->source); })()), "request", [], "any", false, false, false, 140), "get", [0 => "sortField"], "method", false, false, false, 140)) && is_string($__internal_62824350bc4502ee19dbc2e99fc6bdd3bd90e7d8dd6e72f42c35efd048542144 = (twig_get_attribute($this->env, $this->source, $context["metadata"], "property", [], "any", false, false, false, 140) . ".")) && ('' === $__internal_62824350bc4502ee19dbc2e99fc6bdd3bd90e7d8dd6e72f42c35efd048542144 || 0 === strpos($__internal_f607aeef2c31a95a7bf963452dff024ffaeb6aafbe4603f9ca3bec57be8633f4, $__internal_62824350bc4502ee19dbc2e99fc6bdd3bd90e7d8dd6e72f42c35efd048542144)))));
-            // line 141
-            echo "                    ";
-            $context["nextSortDirection"] = (((isset($context["isSortingField"]) || array_key_exists("isSortingField", $context) ? $context["isSortingField"] : (function () { throw new RuntimeError('Variable "isSortingField" does not exist.', 141, $this->source); })())) ? ((((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 141, $this->source); })()), "request", [], "any", false, false, false, 141), "get", [0 => "sortDirection"], "method", false, false, false, 141) == "DESC")) ? ("ASC") : ("DESC"))) : ("DESC"));
             // line 142
             echo "                    ";
-            $context["_column_label"] = $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(twig_get_attribute($this->env, $this->source, $context["metadata"], "label", [], "any", false, false, false, 142), (isset($context["_trans_parameters"]) || array_key_exists("_trans_parameters", $context) ? $context["_trans_parameters"] : (function () { throw new RuntimeError('Variable "_trans_parameters" does not exist.', 142, $this->source); })()),             // line 2
-(isset($context["__internal_8faece2ae5de8a1ef2d8911e9cc3eb1825b6d5a4274c565f49cd96bc3c49c626"]) || array_key_exists("__internal_8faece2ae5de8a1ef2d8911e9cc3eb1825b6d5a4274c565f49cd96bc3c49c626", $context) ? $context["__internal_8faece2ae5de8a1ef2d8911e9cc3eb1825b6d5a4274c565f49cd96bc3c49c626"] : (function () { throw new RuntimeError('Variable "__internal_8faece2ae5de8a1ef2d8911e9cc3eb1825b6d5a4274c565f49cd96bc3c49c626" does not exist.', 2, $this->source); })()));
+            $context["isSortingField"] = ((twig_get_attribute($this->env, $this->source, $context["metadata"], "property", [], "any", false, false, false, 142) == twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 142, $this->source); })()), "request", [], "any", false, false, false, 142), "get", [0 => "sortField"], "method", false, false, false, 142)) || (("association" == twig_get_attribute($this->env, $this->source, $context["metadata"], "type", [], "any", false, false, false, 142)) && (is_string($__internal_f607aeef2c31a95a7bf963452dff024ffaeb6aafbe4603f9ca3bec57be8633f4 = twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 142, $this->source); })()), "request", [], "any", false, false, false, 142), "get", [0 => "sortField"], "method", false, false, false, 142)) && is_string($__internal_62824350bc4502ee19dbc2e99fc6bdd3bd90e7d8dd6e72f42c35efd048542144 = (twig_get_attribute($this->env, $this->source, $context["metadata"], "property", [], "any", false, false, false, 142) . ".")) && ('' === $__internal_62824350bc4502ee19dbc2e99fc6bdd3bd90e7d8dd6e72f42c35efd048542144 || 0 === strpos($__internal_f607aeef2c31a95a7bf963452dff024ffaeb6aafbe4603f9ca3bec57be8633f4, $__internal_62824350bc4502ee19dbc2e99fc6bdd3bd90e7d8dd6e72f42c35efd048542144)))));
             // line 143
             echo "                    ";
-            $context["_column_icon"] = (((isset($context["isSortingField"]) || array_key_exists("isSortingField", $context) ? $context["isSortingField"] : (function () { throw new RuntimeError('Variable "isSortingField" does not exist.', 143, $this->source); })())) ? (((((isset($context["nextSortDirection"]) || array_key_exists("nextSortDirection", $context) ? $context["nextSortDirection"] : (function () { throw new RuntimeError('Variable "nextSortDirection" does not exist.', 143, $this->source); })()) == "DESC")) ? ("fa-arrow-up") : ("fa-arrow-down"))) : ("fa-sort"));
+            $context["nextSortDirection"] = (((isset($context["isSortingField"]) || array_key_exists("isSortingField", $context) ? $context["isSortingField"] : (function () { throw new RuntimeError('Variable "isSortingField" does not exist.', 143, $this->source); })())) ? ((((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 143, $this->source); })()), "request", [], "any", false, false, false, 143), "get", [0 => "sortDirection"], "method", false, false, false, 143) == "DESC")) ? ("ASC") : ("DESC"))) : ("DESC"));
             // line 144
+            echo "                    ";
+            $context["_column_label"] = $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(twig_get_attribute($this->env, $this->source, $context["metadata"], "label", [], "any", false, false, false, 144), (isset($context["_trans_parameters"]) || array_key_exists("_trans_parameters", $context) ? $context["_trans_parameters"] : (function () { throw new RuntimeError('Variable "_trans_parameters" does not exist.', 144, $this->source); })()),             // line 2
+(isset($context["__internal_a8856132fe056b82e7bc7d7226f60c28087f843793d3ca1eebf10b0766725c01"]) || array_key_exists("__internal_a8856132fe056b82e7bc7d7226f60c28087f843793d3ca1eebf10b0766725c01", $context) ? $context["__internal_a8856132fe056b82e7bc7d7226f60c28087f843793d3ca1eebf10b0766725c01"] : (function () { throw new RuntimeError('Variable "__internal_a8856132fe056b82e7bc7d7226f60c28087f843793d3ca1eebf10b0766725c01" does not exist.', 2, $this->source); })()));
+            // line 145
+            echo "                    ";
+            $context["_column_icon"] = (((isset($context["isSortingField"]) || array_key_exists("isSortingField", $context) ? $context["isSortingField"] : (function () { throw new RuntimeError('Variable "isSortingField" does not exist.', 145, $this->source); })())) ? (((((isset($context["nextSortDirection"]) || array_key_exists("nextSortDirection", $context) ? $context["nextSortDirection"] : (function () { throw new RuntimeError('Variable "nextSortDirection" does not exist.', 145, $this->source); })()) == "DESC")) ? ("fa-arrow-up") : ("fa-arrow-down"))) : ("fa-sort"));
+            // line 146
             echo "
                     <th class=\"";
-            // line 145
-            echo (((isset($context["isSortingField"]) || array_key_exists("isSortingField", $context) ? $context["isSortingField"] : (function () { throw new RuntimeError('Variable "isSortingField" does not exist.', 145, $this->source); })())) ? ("sorted") : (""));
+            // line 147
+            echo (((isset($context["isSortingField"]) || array_key_exists("isSortingField", $context) ? $context["isSortingField"] : (function () { throw new RuntimeError('Variable "isSortingField" does not exist.', 147, $this->source); })())) ? ("sorted") : (""));
             echo " ";
-            echo ((twig_get_attribute($this->env, $this->source, $context["metadata"], "virtual", [], "any", false, false, false, 145)) ? ("virtual") : (""));
+            echo ((twig_get_attribute($this->env, $this->source, $context["metadata"], "virtual", [], "any", false, false, false, 147)) ? ("virtual") : (""));
             echo " ";
-            echo twig_escape_filter($this->env, twig_lower_filter($this->env, twig_get_attribute($this->env, $this->source, $context["metadata"], "dataType", [], "any", false, false, false, 145)), "html", null, true);
+            echo twig_escape_filter($this->env, twig_lower_filter($this->env, twig_get_attribute($this->env, $this->source, $context["metadata"], "dataType", [], "any", false, false, false, 147)), "html", null, true);
             echo " ";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["metadata"], "css_class", [], "any", false, false, false, 145), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["metadata"], "css_class", [], "any", false, false, false, 147), "html", null, true);
             echo "\" ";
             echo (($this->extensions['EasyCorp\Bundle\EasyAdminBundle\Twig\EasyAdminTwigExtension']->getBackendConfiguration("design.rtl")) ? ("dir=\"rtl\"") : (""));
             echo ">
                         ";
-            // line 146
-            if (twig_get_attribute($this->env, $this->source, $context["metadata"], "sortable", [], "any", false, false, false, 146)) {
-                // line 147
+            // line 148
+            if (twig_get_attribute($this->env, $this->source, $context["metadata"], "sortable", [], "any", false, false, false, 148)) {
+                // line 149
                 echo "                            <a href=\"";
-                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("easyadmin", twig_array_merge((isset($context["_request_parameters"]) || array_key_exists("_request_parameters", $context) ? $context["_request_parameters"] : (function () { throw new RuntimeError('Variable "_request_parameters" does not exist.', 147, $this->source); })()), ["page" => 1, "sortField" => twig_get_attribute($this->env, $this->source, $context["metadata"], "property", [], "any", false, false, false, 147), "sortDirection" => (isset($context["nextSortDirection"]) || array_key_exists("nextSortDirection", $context) ? $context["nextSortDirection"] : (function () { throw new RuntimeError('Variable "nextSortDirection" does not exist.', 147, $this->source); })())])), "html", null, true);
+                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("easyadmin", twig_array_merge((isset($context["_request_parameters"]) || array_key_exists("_request_parameters", $context) ? $context["_request_parameters"] : (function () { throw new RuntimeError('Variable "_request_parameters" does not exist.', 149, $this->source); })()), ["page" => 1, "sortField" => twig_get_attribute($this->env, $this->source, $context["metadata"], "property", [], "any", false, false, false, 149), "sortDirection" => (isset($context["nextSortDirection"]) || array_key_exists("nextSortDirection", $context) ? $context["nextSortDirection"] : (function () { throw new RuntimeError('Variable "nextSortDirection" does not exist.', 149, $this->source); })())])), "html", null, true);
                 echo "\">
                                 ";
-                // line 148
-                echo (isset($context["_column_label"]) || array_key_exists("_column_label", $context) ? $context["_column_label"] : (function () { throw new RuntimeError('Variable "_column_label" does not exist.', 148, $this->source); })());
+                // line 150
+                echo (isset($context["_column_label"]) || array_key_exists("_column_label", $context) ? $context["_column_label"] : (function () { throw new RuntimeError('Variable "_column_label" does not exist.', 150, $this->source); })());
                 echo " <i class=\"fa fa-fw ";
-                echo twig_escape_filter($this->env, (isset($context["_column_icon"]) || array_key_exists("_column_icon", $context) ? $context["_column_icon"] : (function () { throw new RuntimeError('Variable "_column_icon" does not exist.', 148, $this->source); })()), "html", null, true);
+                echo twig_escape_filter($this->env, (isset($context["_column_icon"]) || array_key_exists("_column_icon", $context) ? $context["_column_icon"] : (function () { throw new RuntimeError('Variable "_column_icon" does not exist.', 150, $this->source); })()), "html", null, true);
                 echo "\"></i>
                             </a>
                         ";
             } else {
-                // line 151
+                // line 153
                 echo "                            <span>";
-                echo (isset($context["_column_label"]) || array_key_exists("_column_label", $context) ? $context["_column_label"] : (function () { throw new RuntimeError('Variable "_column_label" does not exist.', 151, $this->source); })());
+                echo (isset($context["_column_label"]) || array_key_exists("_column_label", $context) ? $context["_column_label"] : (function () { throw new RuntimeError('Variable "_column_label" does not exist.', 153, $this->source); })());
                 echo "</span>
                         ";
             }
-            // line 153
+            // line 155
             echo "                    </th>
                 ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['field'], $context['metadata'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 155
+        // line 157
         echo "
                 ";
-        // line 156
-        if ((twig_length_filter($this->env, (isset($context["_list_item_actions"]) || array_key_exists("_list_item_actions", $context) ? $context["_list_item_actions"] : (function () { throw new RuntimeError('Variable "_list_item_actions" does not exist.', 156, $this->source); })())) > 0)) {
-            // line 157
+        // line 158
+        if ((twig_length_filter($this->env, (isset($context["_list_item_actions"]) || array_key_exists("_list_item_actions", $context) ? $context["_list_item_actions"] : (function () { throw new RuntimeError('Variable "_list_item_actions" does not exist.', 158, $this->source); })())) > 0)) {
+            // line 159
             echo "                    <th ";
-            if (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["_entity_config"]) || array_key_exists("_entity_config", $context) ? $context["_entity_config"] : (function () { throw new RuntimeError('Variable "_entity_config" does not exist.', 157, $this->source); })()), "list", [], "any", false, false, false, 157), "collapse_actions", [], "any", false, false, false, 157)) {
+            if (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["_entity_config"]) || array_key_exists("_entity_config", $context) ? $context["_entity_config"] : (function () { throw new RuntimeError('Variable "_entity_config" does not exist.', 159, $this->source); })()), "list", [], "any", false, false, false, 159), "collapse_actions", [], "any", false, false, false, 159)) {
                 echo "width=\"10px\"";
             }
             echo " ";
             echo (($this->extensions['EasyCorp\Bundle\EasyAdminBundle\Twig\EasyAdminTwigExtension']->getBackendConfiguration("design.rtl")) ? ("dir=\"rtl\"") : (""));
             echo ">
                         <span class=\"sr-only\">";
-            // line 158
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("list.row_actions", (isset($context["_trans_parameters"]) || array_key_exists("_trans_parameters", $context) ? $context["_trans_parameters"] : (function () { throw new RuntimeError('Variable "_trans_parameters" does not exist.', 158, $this->source); })()), "EasyAdminBundle"), "html", null, true);
+            // line 160
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("list.row_actions", (isset($context["_trans_parameters"]) || array_key_exists("_trans_parameters", $context) ? $context["_trans_parameters"] : (function () { throw new RuntimeError('Variable "_trans_parameters" does not exist.', 160, $this->source); })()), "EasyAdminBundle"), "html", null, true);
             echo "</span>
                     </th>
                 ";
         }
-        // line 161
+        // line 163
         echo "            </tr>
         ";
         
@@ -682,7 +688,7 @@ class __TwigTemplate_56d2abfcffe67fb581535824e563508f0ab6a1a32ac3c3828e026e7ed34
 
     }
 
-    // line 166
+    // line 168
     public function block_table_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -692,10 +698,10 @@ class __TwigTemplate_56d2abfcffe67fb581535824e563508f0ab6a1a32ac3c3828e026e7ed34
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "table_body"));
 
-        // line 167
+        // line 169
         echo "            ";
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 167, $this->source); })()), "currentPageResults", [], "any", false, false, false, 167));
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 169, $this->source); })()), "currentPageResults", [], "any", false, false, false, 169));
         $context['_iterated'] = false;
         $context['loop'] = [
           'parent' => $context['_parent'],
@@ -711,80 +717,92 @@ class __TwigTemplate_56d2abfcffe67fb581535824e563508f0ab6a1a32ac3c3828e026e7ed34
             $context['loop']['last'] = 1 === $length;
         }
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
-            // line 168
-            echo "                ";
-            // line 169
-            echo "                ";
-            $context["_item_id"] = ("" . twig_get_attribute($this->env, $this->source, $context["item"], twig_get_attribute($this->env, $this->source, (isset($context["_entity_config"]) || array_key_exists("_entity_config", $context) ? $context["_entity_config"] : (function () { throw new RuntimeError('Variable "_entity_config" does not exist.', 169, $this->source); })()), "primary_key_field_name", [], "any", false, false, false, 169), [], "any", false, false, false, 169));
             // line 170
-            echo "                <tr data-id=\"";
-            echo twig_escape_filter($this->env, (isset($context["_item_id"]) || array_key_exists("_item_id", $context) ? $context["_item_id"] : (function () { throw new RuntimeError('Variable "_item_id" does not exist.', 170, $this->source); })()), "html", null, true);
-            echo "\">
-                    ";
-            // line 171
-            if ((isset($context["_has_batch_actions"]) || array_key_exists("_has_batch_actions", $context) ? $context["_has_batch_actions"] : (function () { throw new RuntimeError('Variable "_has_batch_actions" does not exist.', 171, $this->source); })())) {
+            echo "                ";
+            if ( !$this->extensions['EasyCorp\Bundle\EasyAdminBundle\Twig\EasyAdminTwigExtension']->isGranted(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["_entity_config"]) || array_key_exists("_entity_config", $context) ? $context["_entity_config"] : (function () { throw new RuntimeError('Variable "_entity_config" does not exist.', 170, $this->source); })()), "list", [], "any", false, false, false, 170), "item_permission", [], "any", false, false, false, 170), $context["item"])) {
+                // line 171
+                echo "                    ";
+                $context["_number_of_hidden_results"] = ((isset($context["_number_of_hidden_results"]) || array_key_exists("_number_of_hidden_results", $context) ? $context["_number_of_hidden_results"] : (function () { throw new RuntimeError('Variable "_number_of_hidden_results" does not exist.', 171, $this->source); })()) + 1);
                 // line 172
-                echo "                        <td><input type=\"checkbox\" class=\"form-batch-checkbox\" value=\"";
-                echo twig_escape_filter($this->env, (isset($context["_item_id"]) || array_key_exists("_item_id", $context) ? $context["_item_id"] : (function () { throw new RuntimeError('Variable "_item_id" does not exist.', 172, $this->source); })()), "html", null, true);
-                echo "\"></td>
-                    ";
-            }
-            // line 174
-            echo "
-                    ";
-            // line 175
-            $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable((isset($context["fields"]) || array_key_exists("fields", $context) ? $context["fields"] : (function () { throw new RuntimeError('Variable "fields" does not exist.', 175, $this->source); })()));
-            foreach ($context['_seq'] as $context["field"] => $context["metadata"]) {
-                // line 176
-                echo "                        ";
-                $context["isSortingField"] = (twig_get_attribute($this->env, $this->source, $context["metadata"], "property", [], "any", false, false, false, 176) == twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 176, $this->source); })()), "request", [], "any", false, false, false, 176), "get", [0 => "sortField"], "method", false, false, false, 176));
-                // line 177
-                echo "                        ";
-                $context["_column_label"] = $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(((twig_get_attribute($this->env, $this->source, $context["metadata"], "label", [], "any", false, false, false, 177)) ? (twig_get_attribute($this->env, $this->source, $context["metadata"], "label", [], "any", false, false, false, 177)) : ($this->env->getRuntime('Symfony\Component\Form\FormRenderer')->humanize($context["field"]))), (isset($context["_trans_parameters"]) || array_key_exists("_trans_parameters", $context) ? $context["_trans_parameters"] : (function () { throw new RuntimeError('Variable "_trans_parameters" does not exist.', 177, $this->source); })()),                 // line 2
-(isset($context["__internal_8faece2ae5de8a1ef2d8911e9cc3eb1825b6d5a4274c565f49cd96bc3c49c626"]) || array_key_exists("__internal_8faece2ae5de8a1ef2d8911e9cc3eb1825b6d5a4274c565f49cd96bc3c49c626", $context) ? $context["__internal_8faece2ae5de8a1ef2d8911e9cc3eb1825b6d5a4274c565f49cd96bc3c49c626"] : (function () { throw new RuntimeError('Variable "__internal_8faece2ae5de8a1ef2d8911e9cc3eb1825b6d5a4274c565f49cd96bc3c49c626" does not exist.', 2, $this->source); })()));
-                // line 178
-                echo "
-                        <td class=\"";
-                // line 179
-                echo (((isset($context["isSortingField"]) || array_key_exists("isSortingField", $context) ? $context["isSortingField"] : (function () { throw new RuntimeError('Variable "isSortingField" does not exist.', 179, $this->source); })())) ? ("sorted") : (""));
-                echo " ";
-                echo twig_escape_filter($this->env, twig_lower_filter($this->env, twig_get_attribute($this->env, $this->source, $context["metadata"], "dataType", [], "any", false, false, false, 179)), "html", null, true);
-                echo " ";
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["metadata"], "css_class", [], "any", false, false, false, 179), "html", null, true);
-                echo "\" ";
-                echo (($this->extensions['EasyCorp\Bundle\EasyAdminBundle\Twig\EasyAdminTwigExtension']->getBackendConfiguration("design.rtl")) ? ("dir=\"rtl\"") : (""));
-                echo ">
-                            ";
-                // line 180
-                echo $this->extensions['EasyCorp\Bundle\EasyAdminBundle\Twig\EasyAdminTwigExtension']->renderEntityField($this->env, "list", twig_get_attribute($this->env, $this->source, (isset($context["_entity_config"]) || array_key_exists("_entity_config", $context) ? $context["_entity_config"] : (function () { throw new RuntimeError('Variable "_entity_config" does not exist.', 180, $this->source); })()), "name", [], "any", false, false, false, 180), $context["item"], $context["metadata"]);
-                echo "
-                        </td>
-                    ";
-            }
-            $_parent = $context['_parent'];
-            unset($context['_seq'], $context['_iterated'], $context['field'], $context['metadata'], $context['_parent'], $context['loop']);
-            $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 183
-            echo "
-                    ";
-            // line 184
-            if ((twig_length_filter($this->env, (isset($context["_list_item_actions"]) || array_key_exists("_list_item_actions", $context) ? $context["_list_item_actions"] : (function () { throw new RuntimeError('Variable "_list_item_actions" does not exist.', 184, $this->source); })())) > 0)) {
-                // line 185
-                echo "                        ";
-                $context["_column_label"] = $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("list.row_actions", (isset($context["_trans_parameters"]) || array_key_exists("_trans_parameters", $context) ? $context["_trans_parameters"] : (function () { throw new RuntimeError('Variable "_trans_parameters" does not exist.', 185, $this->source); })()), "EasyAdminBundle");
-                // line 186
-                echo "                        <td class=\"actions\">
+                echo "                ";
+            } else {
+                // line 173
+                echo "                    ";
+                // line 174
+                echo "                    ";
+                $context["_item_id"] = ("" . twig_get_attribute($this->env, $this->source, $context["item"], twig_get_attribute($this->env, $this->source, (isset($context["_entity_config"]) || array_key_exists("_entity_config", $context) ? $context["_entity_config"] : (function () { throw new RuntimeError('Variable "_entity_config" does not exist.', 174, $this->source); })()), "primary_key_field_name", [], "any", false, false, false, 174), [], "any", false, false, false, 174));
+                // line 175
+                echo "                    <tr data-id=\"";
+                echo twig_escape_filter($this->env, (isset($context["_item_id"]) || array_key_exists("_item_id", $context) ? $context["_item_id"] : (function () { throw new RuntimeError('Variable "_item_id" does not exist.', 175, $this->source); })()), "html", null, true);
+                echo "\">
                         ";
-                // line 187
-                $this->displayBlock('item_actions', $context, $blocks);
-                // line 202
-                echo "                        </td>
-                    ";
+                // line 176
+                if ((isset($context["_has_batch_actions"]) || array_key_exists("_has_batch_actions", $context) ? $context["_has_batch_actions"] : (function () { throw new RuntimeError('Variable "_has_batch_actions" does not exist.', 176, $this->source); })())) {
+                    // line 177
+                    echo "                            <td><input type=\"checkbox\" class=\"form-batch-checkbox\" value=\"";
+                    echo twig_escape_filter($this->env, (isset($context["_item_id"]) || array_key_exists("_item_id", $context) ? $context["_item_id"] : (function () { throw new RuntimeError('Variable "_item_id" does not exist.', 177, $this->source); })()), "html", null, true);
+                    echo "\"></td>
+                        ";
+                }
+                // line 179
+                echo "
+                        ";
+                // line 180
+                $context['_parent'] = $context;
+                $context['_seq'] = twig_ensure_traversable((isset($context["_fields_visible_by_user"]) || array_key_exists("_fields_visible_by_user", $context) ? $context["_fields_visible_by_user"] : (function () { throw new RuntimeError('Variable "_fields_visible_by_user" does not exist.', 180, $this->source); })()));
+                foreach ($context['_seq'] as $context["field"] => $context["metadata"]) {
+                    // line 181
+                    echo "                            ";
+                    $context["isSortingField"] = (twig_get_attribute($this->env, $this->source, $context["metadata"], "property", [], "any", false, false, false, 181) == twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 181, $this->source); })()), "request", [], "any", false, false, false, 181), "get", [0 => "sortField"], "method", false, false, false, 181));
+                    // line 182
+                    echo "                            ";
+                    $context["_column_label"] = $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans(((twig_get_attribute($this->env, $this->source, $context["metadata"], "label", [], "any", false, false, false, 182)) ? (twig_get_attribute($this->env, $this->source, $context["metadata"], "label", [], "any", false, false, false, 182)) : ($this->env->getRuntime('Symfony\Component\Form\FormRenderer')->humanize($context["field"]))), (isset($context["_trans_parameters"]) || array_key_exists("_trans_parameters", $context) ? $context["_trans_parameters"] : (function () { throw new RuntimeError('Variable "_trans_parameters" does not exist.', 182, $this->source); })()),                     // line 2
+(isset($context["__internal_a8856132fe056b82e7bc7d7226f60c28087f843793d3ca1eebf10b0766725c01"]) || array_key_exists("__internal_a8856132fe056b82e7bc7d7226f60c28087f843793d3ca1eebf10b0766725c01", $context) ? $context["__internal_a8856132fe056b82e7bc7d7226f60c28087f843793d3ca1eebf10b0766725c01"] : (function () { throw new RuntimeError('Variable "__internal_a8856132fe056b82e7bc7d7226f60c28087f843793d3ca1eebf10b0766725c01" does not exist.', 2, $this->source); })()));
+                    // line 183
+                    echo "
+                            <td class=\"";
+                    // line 184
+                    echo (((isset($context["isSortingField"]) || array_key_exists("isSortingField", $context) ? $context["isSortingField"] : (function () { throw new RuntimeError('Variable "isSortingField" does not exist.', 184, $this->source); })())) ? ("sorted") : (""));
+                    echo " ";
+                    echo twig_escape_filter($this->env, twig_lower_filter($this->env, twig_get_attribute($this->env, $this->source, $context["metadata"], "dataType", [], "any", false, false, false, 184)), "html", null, true);
+                    echo " ";
+                    echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["metadata"], "css_class", [], "any", false, false, false, 184), "html", null, true);
+                    echo "\" ";
+                    echo (($this->extensions['EasyCorp\Bundle\EasyAdminBundle\Twig\EasyAdminTwigExtension']->getBackendConfiguration("design.rtl")) ? ("dir=\"rtl\"") : (""));
+                    echo ">
+                                ";
+                    // line 185
+                    echo $this->extensions['EasyCorp\Bundle\EasyAdminBundle\Twig\EasyAdminTwigExtension']->renderEntityField($this->env, "list", twig_get_attribute($this->env, $this->source, (isset($context["_entity_config"]) || array_key_exists("_entity_config", $context) ? $context["_entity_config"] : (function () { throw new RuntimeError('Variable "_entity_config" does not exist.', 185, $this->source); })()), "name", [], "any", false, false, false, 185), $context["item"], $context["metadata"]);
+                    echo "
+                            </td>
+                        ";
+                }
+                $_parent = $context['_parent'];
+                unset($context['_seq'], $context['_iterated'], $context['field'], $context['metadata'], $context['_parent'], $context['loop']);
+                $context = array_intersect_key($context, $_parent) + $_parent;
+                // line 188
+                echo "
+                        ";
+                // line 189
+                if ((twig_length_filter($this->env, (isset($context["_list_item_actions"]) || array_key_exists("_list_item_actions", $context) ? $context["_list_item_actions"] : (function () { throw new RuntimeError('Variable "_list_item_actions" does not exist.', 189, $this->source); })())) > 0)) {
+                    // line 190
+                    echo "                            ";
+                    $context["_column_label"] = $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("list.row_actions", (isset($context["_trans_parameters"]) || array_key_exists("_trans_parameters", $context) ? $context["_trans_parameters"] : (function () { throw new RuntimeError('Variable "_trans_parameters" does not exist.', 190, $this->source); })()), "EasyAdminBundle");
+                    // line 191
+                    echo "                            <td class=\"actions\">
+                                ";
+                    // line 192
+                    $this->displayBlock('item_actions', $context, $blocks);
+                    // line 207
+                    echo "                            </td>
+                        ";
+                }
+                // line 209
+                echo "                    </tr>
+                ";
             }
-            // line 204
-            echo "                </tr>
-            ";
+            // line 211
+            echo "            ";
             $context['_iterated'] = true;
             ++$context['loop']['index0'];
             ++$context['loop']['index'];
@@ -796,15 +814,15 @@ class __TwigTemplate_56d2abfcffe67fb581535824e563508f0ab6a1a32ac3c3828e026e7ed34
             }
         }
         if (!$context['_iterated']) {
-            // line 206
+            // line 212
             echo "                <tr>
                     <td class=\"no-results\" colspan=\"";
-            // line 207
-            echo twig_escape_filter($this->env, (((twig_length_filter($this->env, (isset($context["_list_item_actions"]) || array_key_exists("_list_item_actions", $context) ? $context["_list_item_actions"] : (function () { throw new RuntimeError('Variable "_list_item_actions" does not exist.', 207, $this->source); })())) > 0)) ? ((twig_length_filter($this->env, (isset($context["fields"]) || array_key_exists("fields", $context) ? $context["fields"] : (function () { throw new RuntimeError('Variable "fields" does not exist.', 207, $this->source); })())) + 1)) : (twig_length_filter($this->env, (isset($context["fields"]) || array_key_exists("fields", $context) ? $context["fields"] : (function () { throw new RuntimeError('Variable "fields" does not exist.', 207, $this->source); })())))), "html", null, true);
+            // line 213
+            echo twig_escape_filter($this->env, (twig_length_filter($this->env, (isset($context["_fields_visible_by_user"]) || array_key_exists("_fields_visible_by_user", $context) ? $context["_fields_visible_by_user"] : (function () { throw new RuntimeError('Variable "_fields_visible_by_user" does not exist.', 213, $this->source); })())) + 1), "html", null, true);
             echo "\">
                         ";
-            // line 208
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("search.no_results", (isset($context["_trans_parameters"]) || array_key_exists("_trans_parameters", $context) ? $context["_trans_parameters"] : (function () { throw new RuntimeError('Variable "_trans_parameters" does not exist.', 208, $this->source); })()), "EasyAdminBundle"), "html", null, true);
+            // line 214
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("search.no_results", (isset($context["_trans_parameters"]) || array_key_exists("_trans_parameters", $context) ? $context["_trans_parameters"] : (function () { throw new RuntimeError('Variable "_trans_parameters" does not exist.', 214, $this->source); })()), "EasyAdminBundle"), "html", null, true);
             echo "
                     </td>
                 </tr>
@@ -813,7 +831,26 @@ class __TwigTemplate_56d2abfcffe67fb581535824e563508f0ab6a1a32ac3c3828e026e7ed34
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 212
+        // line 218
+        echo "
+            ";
+        // line 219
+        if (((isset($context["_number_of_hidden_results"]) || array_key_exists("_number_of_hidden_results", $context) ? $context["_number_of_hidden_results"] : (function () { throw new RuntimeError('Variable "_number_of_hidden_results" does not exist.', 219, $this->source); })()) > 0)) {
+            // line 220
+            echo "                <tr class=\"datagrid-row-empty\">
+                    <td class=\"text-center\" colspan=\"";
+            // line 221
+            echo twig_escape_filter($this->env, (twig_length_filter($this->env, (isset($context["_fields_visible_by_user"]) || array_key_exists("_fields_visible_by_user", $context) ? $context["_fields_visible_by_user"] : (function () { throw new RuntimeError('Variable "_fields_visible_by_user" does not exist.', 221, $this->source); })())) + 1), "html", null, true);
+            echo "\">
+                        <span class=\"datagrid-row-empty-message\"><i class=\"fa fa-lock mr-1\"></i> ";
+            // line 222
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\TranslationExtension']->trans("security.list.hidden_results", [], "EasyAdminBundle"), "html", null, true);
+            echo "</span>
+                    </td>
+                </tr>
+            ";
+        }
+        // line 226
         echo "        ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -823,7 +860,7 @@ class __TwigTemplate_56d2abfcffe67fb581535824e563508f0ab6a1a32ac3c3828e026e7ed34
 
     }
 
-    // line 187
+    // line 192
     public function block_item_actions($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -833,22 +870,22 @@ class __TwigTemplate_56d2abfcffe67fb581535824e563508f0ab6a1a32ac3c3828e026e7ed34
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "item_actions"));
 
-        // line 188
-        echo "                            ";
-        $context["_actions_template"] = ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["_entity_config"]) || array_key_exists("_entity_config", $context) ? $context["_entity_config"] : (function () { throw new RuntimeError('Variable "_entity_config" does not exist.', 188, $this->source); })()), "list", [], "any", false, false, false, 188), "collapse_actions", [], "any", false, false, false, 188)) ? ("@EasyAdmin/default/includes/_actions_dropdown.html.twig") : ("@EasyAdmin/default/includes/_actions.html.twig"));
-        // line 192
-        echo "                            ";
-        echo twig_include($this->env, $context, (isset($context["_actions_template"]) || array_key_exists("_actions_template", $context) ? $context["_actions_template"] : (function () { throw new RuntimeError('Variable "_actions_template" does not exist.', 192, $this->source); })()), ["actions" =>         // line 193
-(isset($context["_list_item_actions"]) || array_key_exists("_list_item_actions", $context) ? $context["_list_item_actions"] : (function () { throw new RuntimeError('Variable "_list_item_actions" does not exist.', 193, $this->source); })()), "entity_config" =>         // line 194
-(isset($context["_entity_config"]) || array_key_exists("_entity_config", $context) ? $context["_entity_config"] : (function () { throw new RuntimeError('Variable "_entity_config" does not exist.', 194, $this->source); })()), "request_parameters" =>         // line 195
-(isset($context["_request_parameters"]) || array_key_exists("_request_parameters", $context) ? $context["_request_parameters"] : (function () { throw new RuntimeError('Variable "_request_parameters" does not exist.', 195, $this->source); })()), "translation_domain" => twig_get_attribute($this->env, $this->source,         // line 196
-(isset($context["_entity_config"]) || array_key_exists("_entity_config", $context) ? $context["_entity_config"] : (function () { throw new RuntimeError('Variable "_entity_config" does not exist.', 196, $this->source); })()), "translation_domain", [], "any", false, false, false, 196), "trans_parameters" =>         // line 197
-(isset($context["_trans_parameters"]) || array_key_exists("_trans_parameters", $context) ? $context["_trans_parameters"] : (function () { throw new RuntimeError('Variable "_trans_parameters" does not exist.', 197, $this->source); })()), "item_id" =>         // line 198
-(isset($context["_item_id"]) || array_key_exists("_item_id", $context) ? $context["_item_id"] : (function () { throw new RuntimeError('Variable "_item_id" does not exist.', 198, $this->source); })()), "item" =>         // line 199
-(isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 199, $this->source); })())], false);
-        // line 200
+        // line 193
+        echo "                                    ";
+        $context["_actions_template"] = ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["_entity_config"]) || array_key_exists("_entity_config", $context) ? $context["_entity_config"] : (function () { throw new RuntimeError('Variable "_entity_config" does not exist.', 193, $this->source); })()), "list", [], "any", false, false, false, 193), "collapse_actions", [], "any", false, false, false, 193)) ? ("@EasyAdmin/default/includes/_actions_dropdown.html.twig") : ("@EasyAdmin/default/includes/_actions.html.twig"));
+        // line 197
+        echo "                                    ";
+        echo twig_include($this->env, $context, (isset($context["_actions_template"]) || array_key_exists("_actions_template", $context) ? $context["_actions_template"] : (function () { throw new RuntimeError('Variable "_actions_template" does not exist.', 197, $this->source); })()), ["actions" =>         // line 198
+(isset($context["_list_item_actions"]) || array_key_exists("_list_item_actions", $context) ? $context["_list_item_actions"] : (function () { throw new RuntimeError('Variable "_list_item_actions" does not exist.', 198, $this->source); })()), "entity_config" =>         // line 199
+(isset($context["_entity_config"]) || array_key_exists("_entity_config", $context) ? $context["_entity_config"] : (function () { throw new RuntimeError('Variable "_entity_config" does not exist.', 199, $this->source); })()), "request_parameters" =>         // line 200
+(isset($context["_request_parameters"]) || array_key_exists("_request_parameters", $context) ? $context["_request_parameters"] : (function () { throw new RuntimeError('Variable "_request_parameters" does not exist.', 200, $this->source); })()), "translation_domain" => twig_get_attribute($this->env, $this->source,         // line 201
+(isset($context["_entity_config"]) || array_key_exists("_entity_config", $context) ? $context["_entity_config"] : (function () { throw new RuntimeError('Variable "_entity_config" does not exist.', 201, $this->source); })()), "translation_domain", [], "any", false, false, false, 201), "trans_parameters" =>         // line 202
+(isset($context["_trans_parameters"]) || array_key_exists("_trans_parameters", $context) ? $context["_trans_parameters"] : (function () { throw new RuntimeError('Variable "_trans_parameters" does not exist.', 202, $this->source); })()), "item_id" =>         // line 203
+(isset($context["_item_id"]) || array_key_exists("_item_id", $context) ? $context["_item_id"] : (function () { throw new RuntimeError('Variable "_item_id" does not exist.', 203, $this->source); })()), "item" =>         // line 204
+(isset($context["item"]) || array_key_exists("item", $context) ? $context["item"] : (function () { throw new RuntimeError('Variable "item" does not exist.', 204, $this->source); })())], false);
+        // line 205
         echo "
-                        ";
+                                ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -857,7 +894,7 @@ class __TwigTemplate_56d2abfcffe67fb581535824e563508f0ab6a1a32ac3c3828e026e7ed34
 
     }
 
-    // line 216
+    // line 230
     public function block_delete_form($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -867,22 +904,22 @@ class __TwigTemplate_56d2abfcffe67fb581535824e563508f0ab6a1a32ac3c3828e026e7ed34
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "delete_form"));
 
-        // line 217
+        // line 231
         echo "        ";
-        $context["referer"] = (((((twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 217, $this->source); })()), "currentPage", [], "any", false, false, false, 217) == twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 217, $this->source); })()), "nbPages", [], "any", false, false, false, 217)) && (1 != twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 217, $this->source); })()), "currentPage", [], "any", false, false, false, 217))) && (1 == twig_length_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 217, $this->source); })()), "currentPageResults", [], "any", false, false, false, 217))))) ? ($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("easyadmin", twig_array_merge(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source,         // line 218
-(isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 218, $this->source); })()), "request", [], "any", false, false, false, 218), "query", [], "any", false, false, false, 218), ["page" => (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 218, $this->source); })()), "request", [], "any", false, false, false, 218), "query", [], "any", false, false, false, 218), "get", [0 => "page"], "method", false, false, false, 218) - 1)]))) : (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source,         // line 219
-(isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 219, $this->source); })()), "request", [], "any", false, false, false, 219), "requestUri", [], "any", false, false, false, 219)));
-        // line 221
+        $context["referer"] = (((((twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 231, $this->source); })()), "currentPage", [], "any", false, false, false, 231) == twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 231, $this->source); })()), "nbPages", [], "any", false, false, false, 231)) && (1 != twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 231, $this->source); })()), "currentPage", [], "any", false, false, false, 231))) && (1 == twig_length_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["paginator"]) || array_key_exists("paginator", $context) ? $context["paginator"] : (function () { throw new RuntimeError('Variable "paginator" does not exist.', 231, $this->source); })()), "currentPageResults", [], "any", false, false, false, 231))))) ? ($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("easyadmin", twig_array_merge(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source,         // line 232
+(isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 232, $this->source); })()), "request", [], "any", false, false, false, 232), "query", [], "any", false, false, false, 232), ["page" => (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 232, $this->source); })()), "request", [], "any", false, false, false, 232), "query", [], "any", false, false, false, 232), "get", [0 => "page"], "method", false, false, false, 232) - 1)]))) : (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source,         // line 233
+(isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 233, $this->source); })()), "request", [], "any", false, false, false, 233), "requestUri", [], "any", false, false, false, 233)));
+        // line 235
         echo "
         ";
-        // line 222
-        echo twig_include($this->env, $context, "@EasyAdmin/default/includes/_delete_form.html.twig", ["view" => "list", "referer" =>         // line 224
-(isset($context["referer"]) || array_key_exists("referer", $context) ? $context["referer"] : (function () { throw new RuntimeError('Variable "referer" does not exist.', 224, $this->source); })()), "delete_form" =>         // line 225
-(isset($context["delete_form_template"]) || array_key_exists("delete_form_template", $context) ? $context["delete_form_template"] : (function () { throw new RuntimeError('Variable "delete_form_template" does not exist.', 225, $this->source); })()), "_translation_domain" => twig_get_attribute($this->env, $this->source,         // line 226
-(isset($context["_entity_config"]) || array_key_exists("_entity_config", $context) ? $context["_entity_config"] : (function () { throw new RuntimeError('Variable "_entity_config" does not exist.', 226, $this->source); })()), "translation_domain", [], "any", false, false, false, 226), "_trans_parameters" =>         // line 227
-(isset($context["_trans_parameters"]) || array_key_exists("_trans_parameters", $context) ? $context["_trans_parameters"] : (function () { throw new RuntimeError('Variable "_trans_parameters" does not exist.', 227, $this->source); })()), "_entity_config" =>         // line 228
-(isset($context["_entity_config"]) || array_key_exists("_entity_config", $context) ? $context["_entity_config"] : (function () { throw new RuntimeError('Variable "_entity_config" does not exist.', 228, $this->source); })())], false);
-        // line 229
+        // line 236
+        echo twig_include($this->env, $context, "@EasyAdmin/default/includes/_delete_form.html.twig", ["view" => "list", "referer" =>         // line 238
+(isset($context["referer"]) || array_key_exists("referer", $context) ? $context["referer"] : (function () { throw new RuntimeError('Variable "referer" does not exist.', 238, $this->source); })()), "delete_form" =>         // line 239
+(isset($context["delete_form_template"]) || array_key_exists("delete_form_template", $context) ? $context["delete_form_template"] : (function () { throw new RuntimeError('Variable "delete_form_template" does not exist.', 239, $this->source); })()), "_translation_domain" => twig_get_attribute($this->env, $this->source,         // line 240
+(isset($context["_entity_config"]) || array_key_exists("_entity_config", $context) ? $context["_entity_config"] : (function () { throw new RuntimeError('Variable "_entity_config" does not exist.', 240, $this->source); })()), "translation_domain", [], "any", false, false, false, 240), "_trans_parameters" =>         // line 241
+(isset($context["_trans_parameters"]) || array_key_exists("_trans_parameters", $context) ? $context["_trans_parameters"] : (function () { throw new RuntimeError('Variable "_trans_parameters" does not exist.', 241, $this->source); })()), "_entity_config" =>         // line 242
+(isset($context["_entity_config"]) || array_key_exists("_entity_config", $context) ? $context["_entity_config"] : (function () { throw new RuntimeError('Variable "_entity_config" does not exist.', 242, $this->source); })())], false);
+        // line 243
         echo "
     ";
         
@@ -893,7 +930,7 @@ class __TwigTemplate_56d2abfcffe67fb581535824e563508f0ab6a1a32ac3c3828e026e7ed34
 
     }
 
-    // line 233
+    // line 247
     public function block_content_footer($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -903,7 +940,7 @@ class __TwigTemplate_56d2abfcffe67fb581535824e563508f0ab6a1a32ac3c3828e026e7ed34
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content_footer"));
 
-        // line 234
+        // line 248
         echo "    ";
         $this->displayBlock('paginator', $context, $blocks);
         
@@ -923,9 +960,9 @@ class __TwigTemplate_56d2abfcffe67fb581535824e563508f0ab6a1a32ac3c3828e026e7ed34
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "paginator"));
 
-        // line 235
+        // line 249
         echo "        ";
-        echo twig_include($this->env, $context, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["_entity_config"]) || array_key_exists("_entity_config", $context) ? $context["_entity_config"] : (function () { throw new RuntimeError('Variable "_entity_config" does not exist.', 235, $this->source); })()), "templates", [], "any", false, false, false, 235), "paginator", [], "any", false, false, false, 235));
+        echo twig_include($this->env, $context, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["_entity_config"]) || array_key_exists("_entity_config", $context) ? $context["_entity_config"] : (function () { throw new RuntimeError('Variable "_entity_config" does not exist.', 249, $this->source); })()), "templates", [], "any", false, false, false, 249), "paginator", [], "any", false, false, false, 249));
         echo "
     ";
         
@@ -936,7 +973,7 @@ class __TwigTemplate_56d2abfcffe67fb581535824e563508f0ab6a1a32ac3c3828e026e7ed34
 
     }
 
-    // line 239
+    // line 253
     public function block_body_javascript($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -946,7 +983,7 @@ class __TwigTemplate_56d2abfcffe67fb581535824e563508f0ab6a1a32ac3c3828e026e7ed34
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body_javascript"));
 
-        // line 240
+        // line 254
         echo "    ";
         $this->displayParentBlock("body_javascript", $context, $blocks);
         echo "
@@ -962,8 +999,8 @@ class __TwigTemplate_56d2abfcffe67fb581535824e563508f0ab6a1a32ac3c3828e026e7ed34
                     const propertyName = this.closest('.checkbox-switch').dataset.propertyname;
 
                     const toggleUrl = \"";
-        // line 252
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("easyadmin", ["action" => "edit", "entity" => twig_get_attribute($this->env, $this->source, (isset($context["_entity_config"]) || array_key_exists("_entity_config", $context) ? $context["_entity_config"] : (function () { throw new RuntimeError('Variable "_entity_config" does not exist.', 252, $this->source); })()), "name", [], "any", false, false, false, 252), "view" => "list"]);
+        // line 266
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("easyadmin", ["action" => "edit", "entity" => twig_get_attribute($this->env, $this->source, (isset($context["_entity_config"]) || array_key_exists("_entity_config", $context) ? $context["_entity_config"] : (function () { throw new RuntimeError('Variable "_entity_config" does not exist.', 266, $this->source); })()), "name", [], "any", false, false, false, 266), "view" => "list"]);
         echo "\"
                         + \"&id=\" + this.closest('tr').dataset.id
                         + \"&property=\" + propertyName
@@ -996,9 +1033,9 @@ class __TwigTemplate_56d2abfcffe67fb581535824e563508f0ab6a1a32ac3c3828e026e7ed34
             });
 
             ";
-        // line 283
-        if ((isset($context["_has_filters"]) || array_key_exists("_has_filters", $context) ? $context["_has_filters"] : (function () { throw new RuntimeError('Variable "_has_filters" does not exist.', 283, $this->source); })())) {
-            // line 284
+        // line 297
+        if ((isset($context["_has_filters"]) || array_key_exists("_has_filters", $context) ? $context["_has_filters"] : (function () { throw new RuntimeError('Variable "_has_filters" does not exist.', 297, $this->source); })())) {
+            // line 298
             echo "            // HTML5 specifies that a <script> tag inserted with innerHTML should not execute
             // https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML#Security_considerations
             // That's why we can't use just 'innerHTML'. See https://stackoverflow.com/a/47614491/2804294
@@ -1030,12 +1067,12 @@ class __TwigTemplate_56d2abfcffe67fb581535824e563508f0ab6a1a32ac3c3828e026e7ed34
             });
             ";
         }
-        // line 314
+        // line 328
         echo "
             ";
-        // line 315
-        if ((isset($context["_has_batch_actions"]) || array_key_exists("_has_batch_actions", $context) ? $context["_has_batch_actions"] : (function () { throw new RuntimeError('Variable "_has_batch_actions" does not exist.', 315, $this->source); })())) {
-            // line 316
+        // line 329
+        if ((isset($context["_has_batch_actions"]) || array_key_exists("_has_batch_actions", $context) ? $context["_has_batch_actions"] : (function () { throw new RuntimeError('Variable "_has_batch_actions" does not exist.', 329, $this->source); })())) {
+            // line 330
             echo "            const titleContent = \$('.content-header-title > .title').html();
             \$(document).on('click', '.deselect-batch-button', function () {
                 \$(this).closest('.content').find(':checkbox.form-batch-checkbox-all').prop('checked', false).trigger('change');
@@ -1073,18 +1110,18 @@ class __TwigTemplate_56d2abfcffe67fb581535824e563508f0ab6a1a32ac3c3828e026e7ed34
             });
             ";
         }
-        // line 352
+        // line 366
         echo "        });
     </script>
 
     ";
-        // line 355
-        if (("search" == twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 355, $this->source); })()), "request", [], "any", false, false, false, 355), "get", [0 => "action"], "method", false, false, false, 355))) {
-            // line 356
+        // line 369
+        if (("search" == twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 369, $this->source); })()), "request", [], "any", false, false, false, 369), "get", [0 => "action"], "method", false, false, false, 369))) {
+            // line 370
             echo "        <script type=\"text/javascript\">
             const _search_query = \"";
-            // line 357
-            echo twig_escape_filter($this->env, twig_escape_filter($this->env, ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["app"] ?? null), "request", [], "any", false, true, false, 357), "get", [0 => "query"], "method", true, true, false, 357)) ? (_twig_default_filter(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["app"] ?? null), "request", [], "any", false, true, false, 357), "get", [0 => "query"], "method", false, false, false, 357), "")) : ("")), "js"), "html", null, true);
+            // line 371
+            echo twig_escape_filter($this->env, twig_escape_filter($this->env, ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["app"] ?? null), "request", [], "any", false, true, false, 371), "get", [0 => "query"], "method", true, true, false, 371)) ? (_twig_default_filter(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["app"] ?? null), "request", [], "any", false, true, false, 371), "get", [0 => "query"], "method", false, false, false, 371), "")) : ("")), "js"), "html", null, true);
             echo "\";
             // the original query is prepended to allow matching exact phrases in addition to single words
             \$('#main').find('table tbody td:not(.actions)').highlight(\$.merge([_search_query], _search_query.split(' ')));
@@ -1111,7 +1148,7 @@ class __TwigTemplate_56d2abfcffe67fb581535824e563508f0ab6a1a32ac3c3828e026e7ed34
 
     public function getDebugInfo()
     {
-        return array (  1087 => 357,  1084 => 356,  1082 => 355,  1077 => 352,  1039 => 316,  1037 => 315,  1034 => 314,  1002 => 284,  1000 => 283,  966 => 252,  950 => 240,  940 => 239,  927 => 235,  907 => 234,  897 => 233,  886 => 229,  884 => 228,  883 => 227,  882 => 226,  881 => 225,  880 => 224,  879 => 222,  876 => 221,  874 => 219,  873 => 218,  871 => 217,  861 => 216,  850 => 200,  848 => 199,  847 => 198,  846 => 197,  845 => 196,  844 => 195,  843 => 194,  842 => 193,  840 => 192,  837 => 188,  827 => 187,  817 => 212,  807 => 208,  803 => 207,  800 => 206,  786 => 204,  782 => 202,  780 => 187,  777 => 186,  774 => 185,  772 => 184,  769 => 183,  760 => 180,  750 => 179,  747 => 178,  745 => 2,  743 => 177,  740 => 176,  736 => 175,  733 => 174,  727 => 172,  725 => 171,  720 => 170,  717 => 169,  715 => 168,  696 => 167,  686 => 166,  675 => 161,  669 => 158,  660 => 157,  658 => 156,  655 => 155,  648 => 153,  642 => 151,  634 => 148,  629 => 147,  627 => 146,  615 => 145,  612 => 144,  609 => 143,  607 => 2,  605 => 142,  602 => 141,  599 => 140,  595 => 139,  592 => 138,  588 => 136,  586 => 135,  583 => 134,  573 => 133,  563 => 216,  558 => 213,  556 => 166,  551 => 163,  549 => 133,  544 => 130,  541 => 129,  531 => 128,  517 => 124,  515 => 123,  511 => 122,  506 => 121,  496 => 120,  481 => 115,  479 => 114,  476 => 113,  473 => 112,  463 => 111,  450 => 104,  448 => 2,  446 => 104,  440 => 103,  432 => 102,  429 => 101,  419 => 100,  408 => 94,  400 => 90,  398 => 89,  395 => 88,  388 => 87,  382 => 86,  379 => 85,  369 => 84,  356 => 73,  354 => 2,  351 => 73,  347 => 71,  336 => 69,  332 => 68,  328 => 67,  323 => 66,  317 => 64,  314 => 63,  308 => 61,  305 => 60,  301 => 53,  298 => 52,  288 => 51,  276 => 77,  274 => 51,  270 => 50,  265 => 49,  255 => 48,  244 => 108,  241 => 100,  238 => 99,  236 => 98,  233 => 97,  230 => 96,  227 => 84,  224 => 83,  222 => 82,  219 => 81,  216 => 80,  214 => 48,  211 => 47,  208 => 46,  205 => 45,  195 => 44,  185 => 33,  182 => 41,  177 => 39,  176 => 2,  174 => 39,  171 => 38,  166 => 36,  165 => 2,  163 => 36,  160 => 35,  157 => 34,  154 => 33,  144 => 32,  125 => 30,  106 => 29,  96 => 5,  94 => 27,  92 => 26,  90 => 25,  87 => 21,  86 => 20,  84 => 19,  82 => 15,  81 => 14,  80 => 13,  79 => 12,  78 => 11,  77 => 10,  76 => 9,  75 => 8,  74 => 7,  72 => 2,  71 => 3,  70 => 2,  69 => 3,  67 => 2,  65 => 1,  52 => 5,);
+        return array (  1124 => 371,  1121 => 370,  1119 => 369,  1114 => 366,  1076 => 330,  1074 => 329,  1071 => 328,  1039 => 298,  1037 => 297,  1003 => 266,  987 => 254,  977 => 253,  964 => 249,  944 => 248,  934 => 247,  923 => 243,  921 => 242,  920 => 241,  919 => 240,  918 => 239,  917 => 238,  916 => 236,  913 => 235,  911 => 233,  910 => 232,  908 => 231,  898 => 230,  887 => 205,  885 => 204,  884 => 203,  883 => 202,  882 => 201,  881 => 200,  880 => 199,  879 => 198,  877 => 197,  874 => 193,  864 => 192,  854 => 226,  847 => 222,  843 => 221,  840 => 220,  838 => 219,  835 => 218,  825 => 214,  821 => 213,  818 => 212,  805 => 211,  801 => 209,  797 => 207,  795 => 192,  792 => 191,  789 => 190,  787 => 189,  784 => 188,  775 => 185,  765 => 184,  762 => 183,  760 => 2,  758 => 182,  755 => 181,  751 => 180,  748 => 179,  742 => 177,  740 => 176,  735 => 175,  732 => 174,  730 => 173,  727 => 172,  724 => 171,  721 => 170,  702 => 169,  692 => 168,  681 => 163,  675 => 160,  666 => 159,  664 => 158,  661 => 157,  654 => 155,  648 => 153,  640 => 150,  635 => 149,  633 => 148,  621 => 147,  618 => 146,  615 => 145,  613 => 2,  611 => 144,  608 => 143,  605 => 142,  601 => 141,  598 => 140,  594 => 138,  592 => 137,  589 => 136,  579 => 135,  569 => 230,  564 => 227,  562 => 168,  557 => 165,  555 => 135,  550 => 132,  547 => 131,  544 => 130,  541 => 129,  531 => 128,  517 => 124,  515 => 123,  511 => 122,  506 => 121,  496 => 120,  481 => 115,  479 => 114,  476 => 113,  473 => 112,  463 => 111,  450 => 104,  448 => 2,  446 => 104,  440 => 103,  432 => 102,  429 => 101,  419 => 100,  408 => 94,  400 => 90,  398 => 89,  395 => 88,  388 => 87,  382 => 86,  379 => 85,  369 => 84,  356 => 73,  354 => 2,  351 => 73,  347 => 71,  336 => 69,  332 => 68,  328 => 67,  323 => 66,  317 => 64,  314 => 63,  308 => 61,  305 => 60,  301 => 53,  298 => 52,  288 => 51,  276 => 77,  274 => 51,  270 => 50,  265 => 49,  255 => 48,  244 => 108,  241 => 100,  238 => 99,  236 => 98,  233 => 97,  230 => 96,  227 => 84,  224 => 83,  222 => 82,  219 => 81,  216 => 80,  214 => 48,  211 => 47,  208 => 46,  205 => 45,  195 => 44,  185 => 33,  182 => 41,  177 => 39,  176 => 2,  174 => 39,  171 => 38,  166 => 36,  165 => 2,  163 => 36,  160 => 35,  157 => 34,  154 => 33,  144 => 32,  125 => 30,  106 => 29,  96 => 5,  94 => 27,  92 => 26,  90 => 25,  87 => 21,  86 => 20,  84 => 19,  82 => 15,  81 => 14,  80 => 13,  79 => 12,  78 => 11,  77 => 10,  76 => 9,  75 => 8,  74 => 7,  72 => 2,  71 => 3,  70 => 2,  69 => 3,  67 => 2,  65 => 1,  52 => 5,);
     }
 
     public function getSourceContext()
@@ -1229,7 +1266,7 @@ class __TwigTemplate_56d2abfcffe67fb581535824e563508f0ab6a1a32ac3c3828e026e7ed34
 {% block batch_actions %}
     {% if _has_batch_actions %}
         <div class=\"batch-actions\" style=\"display: none\">
-            {% form_theme batch_form with easyadmin_config('design.form_theme') %}
+            {% form_theme batch_form with easyadmin_config('design.form_theme') only %}
             {{ form(batch_form) }}
         </div>
     {% endif %}
@@ -1244,6 +1281,8 @@ class __TwigTemplate_56d2abfcffe67fb581535824e563508f0ab6a1a32ac3c3828e026e7ed34
 {% endblock content_header %}
 
 {% block main %}
+    {% set _fields_visible_by_user = fields|filter((metadata, field) => easyadmin_is_granted(metadata.permission)) %}
+    {% set _number_of_hidden_results = 0 %}
     {% set _list_item_actions = easyadmin_get_actions_for_list_item(_entity_config.name) %}
 
     <table class=\"table datagrid\">
@@ -1254,7 +1293,7 @@ class __TwigTemplate_56d2abfcffe67fb581535824e563508f0ab6a1a32ac3c3828e026e7ed34
                     <th width=\"1px\"><span><input type=\"checkbox\" class=\"form-batch-checkbox-all\"></span></th>
                 {% endif %}
 
-                {% for field, metadata in fields %}
+                {% for field, metadata in _fields_visible_by_user %}
                     {% set isSortingField = (metadata.property == app.request.get('sortField')) or ('association' == metadata.type and app.request.get('sortField') starts with metadata.property ~ '.') %}
                     {% set nextSortDirection = isSortingField ? (app.request.get('sortDirection') == 'DESC' ? 'ASC' : 'DESC') : 'DESC' %}
                     {% set _column_label = metadata.label|trans(_trans_parameters) %}
@@ -1283,50 +1322,62 @@ class __TwigTemplate_56d2abfcffe67fb581535824e563508f0ab6a1a32ac3c3828e026e7ed34
         <tbody>
         {% block table_body %}
             {% for item in paginator.currentPageResults %}
-                {# the empty string concatenation is needed when the primary key is an object (e.g. an Uuid object) #}
-                {% set _item_id = '' ~ attribute(item, _entity_config.primary_key_field_name) %}
-                <tr data-id=\"{{ _item_id }}\">
-                    {% if _has_batch_actions %}
-                        <td><input type=\"checkbox\" class=\"form-batch-checkbox\" value=\"{{ _item_id }}\"></td>
-                    {% endif %}
+                {% if not easyadmin_is_granted(_entity_config.list.item_permission, item) %}
+                    {% set _number_of_hidden_results = _number_of_hidden_results + 1 %}
+                {% else %}
+                    {# the empty string concatenation is needed when the primary key is an object (e.g. an Uuid object) #}
+                    {% set _item_id = '' ~ attribute(item, _entity_config.primary_key_field_name) %}
+                    <tr data-id=\"{{ _item_id }}\">
+                        {% if _has_batch_actions %}
+                            <td><input type=\"checkbox\" class=\"form-batch-checkbox\" value=\"{{ _item_id }}\"></td>
+                        {% endif %}
 
-                    {% for field, metadata in fields %}
-                        {% set isSortingField = metadata.property == app.request.get('sortField') %}
-                        {% set _column_label =  (metadata.label ?: field|humanize)|trans(_trans_parameters)  %}
+                        {% for field, metadata in _fields_visible_by_user %}
+                            {% set isSortingField = metadata.property == app.request.get('sortField') %}
+                            {% set _column_label =  (metadata.label ?: field|humanize)|trans(_trans_parameters)  %}
 
-                        <td class=\"{{ isSortingField ? 'sorted' }} {{ metadata.dataType|lower }} {{ metadata.css_class }}\" {{ easyadmin_config('design.rtl') ? 'dir=\"rtl\"' }}>
-                            {{ easyadmin_render_field_for_list_view(_entity_config.name, item, metadata) }}
-                        </td>
-                    {% endfor %}
+                            <td class=\"{{ isSortingField ? 'sorted' }} {{ metadata.dataType|lower }} {{ metadata.css_class }}\" {{ easyadmin_config('design.rtl') ? 'dir=\"rtl\"' }}>
+                                {{ easyadmin_render_field_for_list_view(_entity_config.name, item, metadata) }}
+                            </td>
+                        {% endfor %}
 
-                    {% if _list_item_actions|length > 0 %}
-                        {% set _column_label =  'list.row_actions'|trans(_trans_parameters, 'EasyAdminBundle') %}
-                        <td class=\"actions\">
-                        {% block item_actions %}
-                            {% set _actions_template = _entity_config.list.collapse_actions
-                                ? '@EasyAdmin/default/includes/_actions_dropdown.html.twig'
-                                : '@EasyAdmin/default/includes/_actions.html.twig'
-                            %}
-                            {{ include(_actions_template, {
-                                actions: _list_item_actions,
-                                entity_config: _entity_config,
-                                request_parameters: _request_parameters,
-                                translation_domain: _entity_config.translation_domain,
-                                trans_parameters: _trans_parameters,
-                                item_id: _item_id,
-                                item: item
-                            }, with_context = false) }}
-                        {% endblock item_actions %}
-                        </td>
-                    {% endif %}
-                </tr>
+                        {% if _list_item_actions|length > 0 %}
+                            {% set _column_label =  'list.row_actions'|trans(_trans_parameters, 'EasyAdminBundle') %}
+                            <td class=\"actions\">
+                                {% block item_actions %}
+                                    {% set _actions_template = _entity_config.list.collapse_actions
+                                        ? '@EasyAdmin/default/includes/_actions_dropdown.html.twig'
+                                        : '@EasyAdmin/default/includes/_actions.html.twig'
+                                    %}
+                                    {{ include(_actions_template, {
+                                        actions: _list_item_actions,
+                                        entity_config: _entity_config,
+                                        request_parameters: _request_parameters,
+                                        translation_domain: _entity_config.translation_domain,
+                                        trans_parameters: _trans_parameters,
+                                        item_id: _item_id,
+                                        item: item
+                                    }, with_context = false) }}
+                                {% endblock item_actions %}
+                            </td>
+                        {% endif %}
+                    </tr>
+                {% endif %}
             {% else %}
                 <tr>
-                    <td class=\"no-results\" colspan=\"{{ _list_item_actions|length > 0 ? fields|length + 1 : fields|length }}\">
+                    <td class=\"no-results\" colspan=\"{{ _fields_visible_by_user|length + 1 }}\">
                         {{ 'search.no_results'|trans(_trans_parameters, 'EasyAdminBundle') }}
                     </td>
                 </tr>
             {% endfor %}
+
+            {% if _number_of_hidden_results > 0 %}
+                <tr class=\"datagrid-row-empty\">
+                    <td class=\"text-center\" colspan=\"{{ _fields_visible_by_user|length + 1 }}\">
+                        <span class=\"datagrid-row-empty-message\"><i class=\"fa fa-lock mr-1\"></i> {{ 'security.list.hidden_results'|trans({}, 'EasyAdminBundle') }}</span>
+                    </td>
+                </tr>
+            {% endif %}
         {% endblock table_body %}
         </tbody>
     </table>

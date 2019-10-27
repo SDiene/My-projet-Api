@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Transaction;
 use App\Entity\Tarifs;
+use App\Form\FraisType;
 use App\Form\TransactionType;
 
 use App\Repository\UserRepository;
@@ -26,10 +27,9 @@ class TransactionController extends AbstractController
 {
     /** 
      * @Route("/envoie", name="add_envoie", methods={"POST", "GET"})
-     * @IsGranted("ROLE_USER")
     */
 
-    public function addTransaction(Request $request, UserRepository $user,CompteRepository $compte,EntityManagerInterface $entityManager)
+    public function addTransaction(Request $request,EntityManagerInterface $entityManager)
     {
             $envoie = new Transaction();
 
@@ -40,7 +40,7 @@ class TransactionController extends AbstractController
             
             while (true) {
                 if (time() % 1 == 0) {
-                    $alea = rand(100,1000000);
+                    $alea = rand(100,100000000);
                     break;
                 }else {
                     slep(1);
@@ -72,10 +72,10 @@ class TransactionController extends AbstractController
                 $com=$values->getValeur();
                 $envoie->setFrais($com);
 
-                $envoie->setCometat(($com*30)/100);
-                $envoie->setComsystem(($com*40)/100); 
-                $envoie->setComenvoie(($com*10)/100);
-                $envoie->setComretrait(($com*20)/100);
+                $envoie->setCometat($com*0.3);
+                $envoie->setComsystem($com*0.4); 
+                $envoie->setComenvoie($com*0.1);
+                $envoie->setComretrait($com*0.2);
             }
            
             }
@@ -90,12 +90,12 @@ class TransactionController extends AbstractController
                 $entityManager->persist($envoie);
                 $entityManager->flush();
            
-                return new Response('Le transfert a été effectué avec succés. Voici le code : '.$envoie->getCode());
+                return new JsonResponse('Le transfert a été effectué avec succés. Voici le code : '.$envoie->getCode());
             
             }
             else{
     
-                return new Response('Le solde de votre compte ne vous permet d effectuer une transaction');
+                return new JsonResponse('Le solde de votre compte ne vous permet d effectuer une transaction');
             }
                   
     }
@@ -109,21 +109,22 @@ class TransactionController extends AbstractController
 
         $trans = new Transaction();
         $form = $this->createForm(TransactionType::class, $trans);
-        $user = $this->getUser();
+        
         $data = $request->request->all();
         $form->submit($data); 
+        $user = $this->getUser();
         $code=$data['code'];
 
         $trouve=$transaction->findOneBy(['code' =>$code]);
         
         if (!$trouve) {
-            return new Response('Le code saisi est incorecte .Veuillez ressayer un autre  ');
+            return new JsonResponse('Le code saisi est incorecte .Veuillez ressayer un autre  ');
         } 
         
         $statut=$trouve->getType();
 
         if($trouve->getCode()== $code && $statut=="retrait"){
-            return new Response('Le code saisi est déjà retiré  ');
+            return new JsonResponse('Le code saisi est déjà retiré  ');
 
         }
 
@@ -136,15 +137,44 @@ class TransactionController extends AbstractController
 
         $entityManager->flush();
         
-        return new Response('Vous venez de retirer  ' . $trouve->getMontant());
+        return new JsonResponse('Vous venez de retirer  ' . $trouve->getMontant());
         
     }
 
+    /**
+     * @Route("/keyup", name="add_keyup" ,methods={"POST", "GET"})
+    */
+    public function commission(Request $request)
+    {
+        $trans = new Transaction();
+        $form = $this->createForm(FraisType::class, $trans);
+        $data = $request->request->all();
+        $form->submit($data);
+
+        $valeur = $form->get('montant')->getData();
+        $tarif = $this->getDoctrine()->getRepository(Tarifs::class)->findAll();
+        $com=0;
+        foreach($tarif as $values) {
+
+            $values->getBorneinferieur();
+            $values->getBornesuperieur();
+            $values->getValeur();
+        
+        if($valeur >= $values->getBorneInferieur() && $valeur <= $values->getBorneSuperieur() ){
+            $com=$values->getValeur();
+        }
+       
+        }
+        return new JsonResponse($com);
+    }
+
+    // lister tous les transactions qui existent dans la base de donnée 
+
     /** 
-     * @Route("/liste_transaction", name="list_transaction", methods={"GET", "POST"})
-     */
+     * @Route("/liste_transaction", name="liste_transaction", methods={"GET", "POST"})
+     
     
-    public function index(TransactionRepository $trans, SerializerInterface $serializer)
+    public function Operation(TransactionRepository $trans, SerializerInterface $serializer)
     {
         $transac = $trans->findAll();
         $data = $serializer->serialize($transac, 'json', [
@@ -152,6 +182,65 @@ class TransactionController extends AbstractController
         ]);
 
         return new JsonResponse($data, 200);
+    }*/
+
+    /**
+     * @Route("/transactions", name="transactions", methods={"GET", "POST"})
+    
+
+    public function Transaction(TransactionRepository $transRepository, SerializerInterface $serializer)
+    {
+        
+        $user= $this->getUser()->getId();
+       
+        $partenaire  = $transRepository->findBy(['user' =>$user]);
+        $data = $serializer->serialize($partenaire, 'json',['groups' => ['show']]);
+        return new JsonResponse($data, 200);
+    }*/
+
+    // Lister les transactions par date 
+
+    public $dateFrom;
+    private $dateTo;
+    public function __construct()
+    {
+        $this->dateFrom = 'dateFrom';
+        $this->dateTo = 'dateTo';
     }
- 
-  } 
+
+    /** 
+     * @Route("/lister_transaction", name="lister_transaction", methods={"GET", "POST"})
+     */
+
+    public function trans(Request $request, TransactionRepository $trans, SerializerInterface $serializer)
+    {
+        $user = $this->getUser();
+        $values = json_decode($request->getContent());
+
+        if (!$values) {
+            $values= $request ->request->all();
+        }
+        $debut = new \DateTime($values->dateFrom);
+        $fin = new \DateTime($values->dateTo);
+
+        try {
+            $repo1 = $this->getDoctrine()->getRepository(Transaction::class);
+            $detail = $repo1->getByDate($debut, $fin, $user);
+            if ($detail == []) {
+                return $this->json([
+                    'message' => 'aucune transaction pour cette intervale! verifier la date'
+                ]);
+            }
+        } catch (ParseException $exception) {
+            $exception = [
+                'status' => 500,
+                'message' => 'Vous devez renseignes tous les champs'
+            ];
+            return new JsonResponse($exception, 500);
+        }
+        $data = $serializer->serialize($detail, 'json', ['groups' => ['show']]);
+    
+        return new JsonResponse($data, 200);
+    }
+
+}  

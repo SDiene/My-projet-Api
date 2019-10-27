@@ -142,21 +142,6 @@ class UserController extends AbstractController
     }
 
     /**
-     * @Route("/users/{id}", name="show_user", methods={"GET","POST"})
-     */
-    public function list(User $user,SerializerInterface $serializer, UserRepository $userRepository)
-    {
-        $user = $userRepository->findAll($user->getId());
-        $data = $serializer->serialize($user, 'json', [
-            'groups' => ['show']
-        ]);
-        return new Response($data, 200, [
-            'Content-Types' => 'applications/json'
-        ]);
-
-    }
-
-    /**
      * @Route("/token", name="token", methods={"POST", "GET"})
      * @param Request $request
      * @param JWTEncoderInterface $JWTEncoder
@@ -199,16 +184,16 @@ class UserController extends AbstractController
     }
 
     /**
-     * @Route("/liste_users" , name="liste_users" ,methods={"GET", "POST"})
-     */
+     * @Route("/lister_users", name="lister_users", methods={"GET", "POST"})
+    */
+
     public function listerUser(UserRepository $userRepository, SerializerInterface $serializer)
     {
-
-        $user = $userRepository->findAll();
-        $data = $serializer->serialize($user, 'json', [
-            'group' => ['show'],
-        ]);
-        return new Response($data, 201);
-
+        
+        $user= $this->getUser()->getId();
+       
+        $util = $userRepository->findBy(['user' =>$user]);
+        $data = $serializer->serialize($util, 'json',['groups' => ['show']]);
+        return new JsonResponse($data, 200);
     }
 }
